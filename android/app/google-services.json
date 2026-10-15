@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "2676774211",
+    "project_id": "finova-banking-app",
+    "storage_bucket": "finova-banking-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2676774211:android:96e02319e0af7348a30bf6",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2676774211-1shvd27r3v6ke7rvvoaqoa5ld4gkdgbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.untitled",
+            "certificate_hash": "c783142e4cdd115faaf1eb155464bcaaaf0aa3cf"
+          }
+        },
+        {
+          "client_id": "2676774211-o4lt5oq8d0inub91vbrr9khrtq5a5t3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhEprgpIt_Pd-CgPzxvqBDAe-F0pWrDnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2676774211-o4lt5oq8d0inub91vbrr9khrtq5a5t3h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "2676774211-ae3vm5vhvfqg3k4igcnurkbaa8fpepff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.untitled"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

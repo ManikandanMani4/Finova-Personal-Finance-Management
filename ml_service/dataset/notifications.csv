@@ -1,0 +1,1101 @@
+﻿date,source_app,notification_text,label
+2025-01-01,Bank,NEFT credit of Rs 650 received from Ravi.,transaction
+2025-01-01,UPI,"UPI payment of Rs 5,000 to Fresh Mart successful.",transaction
+2025-01-02,Bank,Your account has been debited by Rs 500 for Movie Tickets.,transaction
+2025-01-02,Bank,"Your card was used for Rs 12,000 at Mobile Store.",transaction
+2025-01-02,Bank,Your bank statement is ready to download.,non_transaction
+2025-01-03,PaymentApp,Rs 199 has been refunded by City Restaurant.,transaction
+2025-01-03,UPI,UPI transaction of Rs 799 to Coffee House failed.,transaction
+2025-01-03,Bank,"INR 2,500 credited to your account from Friend.",transaction
+2025-01-04,UPI,UPI payment of Rs 75 to Bus Booking successful.,transaction
+2025-01-04,UPI,UPI payment of Rs 650 to Grocery Store successful.,transaction
+2025-01-04,UPI,UPI transaction of Rs 349 to Food Corner failed.,transaction
+2025-01-05,Instagram,You have a new Instagram follower.,non_transaction
+2025-01-05,Bank,Your bank statement is ready to download.,non_transaction
+2025-01-05,Bank,Your account security settings were updated.,non_transaction
+2025-01-06,UPI,"Rs 1,250 spent using UPI at Online Market.",transaction
+2025-01-06,PaymentApp,Rs 500 has been refunded by Bus Booking.,transaction
+2025-01-07,UPI,Your account received Rs 650 via UPI from Friend.,transaction
+2025-01-07,Bank,"Rs 2,500 debited from account ending 1234. Ref: TX245051.",transaction
+2025-01-07,UPI,UPI payment of Rs 75 to Grocery Store successful.,transaction
+2025-01-07,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-01-08,Bank,Your account has been debited by Rs 199 for Bus Booking.,transaction
+2025-01-08,PaymentApp,Rs 199 has been refunded by Book Shop.,transaction
+2025-01-08,Bank,NEFT credit of Rs 349 received from A Kumar.,transaction
+2025-01-08,Bank,Rs 250 withdrawn from your account at ATM.,transaction
+2025-01-09,StreamingApp,Your subscription renews next week.,non_transaction
+2025-01-09,Bank,Your account security settings were updated.,non_transaction
+2025-01-10,Instagram,You have a new Instagram follower.,non_transaction
+2025-01-10,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-01-11,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-01-11,UPI,"UPI transaction of Rs 12,000 to Internet Provider failed.",transaction
+2025-01-11,Bank,Your card was used for Rs 120 at Food Corner.,transaction
+2025-01-11,Bank,Your card was used for Rs 49 at City Restaurant.,transaction
+2025-01-12,UPI,"Rs 1,250 spent using UPI at City Restaurant.",transaction
+2025-01-12,PaymentApp,Bill payment of Rs 500 for Electricity Board successful.,transaction
+2025-01-13,PaymentApp,"Bill payment of Rs 5,000 for Fuel Station successful.",transaction
+2025-01-13,Bank,Your OTP is 589710. Do not share it with anyone.,non_transaction
+2025-01-13,Bank,INR 75 credited to your account from Customer.,transaction
+2025-01-13,Instagram,Sam mentioned you in a comment.,non_transaction
+2025-01-14,PaymentApp,Payment of Rs 799 at Pharmacy is complete.,transaction
+2025-01-14,Bank,INR 75 credited to your account from Friend.,transaction
+2025-01-14,UPI,UPI payment of Rs 650 to Metro Store successful.,transaction
+2025-01-14,UPI,Your payment of Rs 75 is pending at Metro Store.,transaction
+2025-01-15,Bank,"Salary credit: Rs 1,000 received in your account.",transaction
+2025-01-15,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-01-15,Bank,Rs 75 withdrawn from your account at ATM.,transaction
+2025-01-15,PaymentApp,Rs 75 has been refunded by Fresh Mart.,transaction
+2025-01-16,UPI,UPI payment of Rs 349 to City Restaurant successful.,transaction
+2025-01-16,Bank,Your account security settings were updated.,non_transaction
+2025-01-16,UPI,Rs 120 spent using UPI at Online Market.,transaction
+2025-01-17,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-01-17,UPI,"Your account received Rs 1,000 via UPI from Family Account.",transaction
+2025-01-17,WhatsApp,You have a new WhatsApp message from Priya.,non_transaction
+2025-01-18,Bank,NEFT credit of Rs 250 received from Family Account.,transaction
+2025-01-18,Bank,Your OTP is 559469. Do not share it with anyone.,non_transaction
+2025-01-19,Phone,You have a missed call from +91-9695499669.,non_transaction
+2025-01-19,Bank,INR 250 credited to your account from A Kumar.,transaction
+2025-01-19,ShoppingApp,Special offer: save 20% on selected items today.,non_transaction
+2025-01-20,Bank,"NEFT credit of Rs 25,000 received from Sample Sender.",transaction
+2025-01-20,Bank,Rs 799 debited from account ending 1234. Ref: TX449759.,transaction
+2025-01-20,YouTube,New videos are waiting for you.,non_transaction
+2025-01-21,Bank,INR 120 credited to your account from Customer.,transaction
+2025-01-21,UPI,UPI transaction of Rs 250 to Online Market failed.,transaction
+2025-01-21,UPI,"Rs 1,800 spent using UPI at Fuel Station.",transaction
+2025-01-21,Bank,Your OTP is 526117. Do not share it with anyone.,non_transaction
+2025-01-22,Bank,Your account security settings were updated.,non_transaction
+2025-01-22,WhatsApp,You have a new WhatsApp message from Sam.,non_transaction
+2025-01-22,Bank,Your account security settings were updated.,non_transaction
+2025-01-23,UPI,"Rs 25,000 spent using UPI at Fuel Station.",transaction
+2025-01-23,Bank,Your OTP is 933980. Do not share it with anyone.,non_transaction
+2025-01-24,Bank,"Rs 2,500 withdrawn from your account at ATM.",transaction
+2025-01-24,YouTube,New videos are waiting for you.,non_transaction
+2025-01-24,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-01-25,YouTube,New videos are waiting for you.,non_transaction
+2025-01-25,PaymentApp,"Rs 5,000 has been refunded by Mobile Store.",transaction
+2025-01-25,Bank,Rs 799 withdrawn from your account at ATM.,transaction
+2025-01-26,Bank,"Rs 1,800 withdrawn from your account at ATM.",transaction
+2025-01-26,Instagram,New posts from accounts you follow.,non_transaction
+2025-01-27,Bank,"Rs 1,250 debited from account ending 1234. Ref: TX410016.",transaction
+2025-01-27,Bank,"Rs 5,000 withdrawn from your account at ATM.",transaction
+2025-01-27,Bank,Your bank statement is ready to download.,non_transaction
+2025-01-28,Bank,"Rs 5,000 withdrawn from your account at ATM.",transaction
+2025-01-28,WhatsApp,Your friend Priya shared a photo with you.,non_transaction
+2025-01-29,Bank,Your bank statement is ready to download.,non_transaction
+2025-01-29,Instagram,New posts from accounts you follow.,non_transaction
+2025-01-29,Bank,IMPS transfer of Rs 650 to Coffee House completed.,transaction
+2025-01-29,Bank,"Your card was used for Rs 25,000 at Mobile Store.",transaction
+2025-01-30,Bank,"Rs 2,500 withdrawn from your account at ATM.",transaction
+2025-01-30,Bank,Your account has been debited by Rs 199 for Coffee House.,transaction
+2025-01-31,Phone,You have a missed call from +91-9367574609.,non_transaction
+2025-01-31,Instagram,Priya mentioned you in a comment.,non_transaction
+2025-01-31,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-02-01,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-02-01,Bank,Your card was used for Rs 799 at Coffee House.,transaction
+2025-02-01,Bank,Your card was used for Rs 799 at Pharmacy.,transaction
+2025-02-01,Bank,"NEFT credit of Rs 1,250 received from Friend.",transaction
+2025-02-02,UPI,Your payment of Rs 250 is pending at Movie Tickets.,transaction
+2025-02-02,PaymentApp,"Rs 12,000 has been refunded by Online Market.",transaction
+2025-02-02,Bank,Your monthly account summary is available.,non_transaction
+2025-02-03,UPI,"UPI transaction of Rs 1,000 to Coffee House failed.",transaction
+2025-02-03,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-02-03,Bank,Your account security settings were updated.,non_transaction
+2025-02-03,UPI,"Your payment of Rs 1,250 is pending at Bus Booking.",transaction
+2025-02-04,WhatsApp,Your friend Sam shared a photo with you.,non_transaction
+2025-02-04,Bank,Your password was changed successfully.,non_transaction
+2025-02-04,ShoppingApp,Special offer: save 15% on selected items today.,non_transaction
+2025-02-04,Bank,"Rs 12,000 withdrawn from your account at ATM.",transaction
+2025-02-05,Bank,Rs 799 debited from account ending 1234. Ref: TX593152.,transaction
+2025-02-05,UPI,"Rs 1,800 spent using UPI at Fuel Station.",transaction
+2025-02-05,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-02-05,Bank,Your account security settings were updated.,non_transaction
+2025-02-06,Bank,"NEFT credit of Rs 1,800 received from Friend.",transaction
+2025-02-06,Instagram,Sam mentioned you in a comment.,non_transaction
+2025-02-06,Bank,"IMPS transfer of Rs 2,500 to Online Market completed.",transaction
+2025-02-07,Bank,Your account security settings were updated.,non_transaction
+2025-02-07,Instagram,New posts from accounts you follow.,non_transaction
+2025-02-08,Bank,"Rs 1,800 debited from account ending 1234. Ref: TX778998.",transaction
+2025-02-08,Bank,"Rs 25,000 debited from account ending 1234. Ref: TX479781.",transaction
+2025-02-09,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-02-09,PaymentApp,"Bill payment of Rs 12,000 for Online Market successful.",transaction
+2025-02-09,ShoppingApp,Your order has been shipped.,non_transaction
+2025-02-09,Bank,Your account security settings were updated.,non_transaction
+2025-02-10,PaymentApp,"Bill payment of Rs 1,250 for Metro Store successful.",transaction
+2025-02-10,Bank,"NEFT credit of Rs 1,250 received from Friend.",transaction
+2025-02-10,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-02-10,Bank,"Rs 25,000 debited from account ending 1234. Ref: TX351997.",transaction
+2025-02-11,StreamingApp,Your subscription renews next week.,non_transaction
+2025-02-11,UPI,Your payment of Rs 650 is pending at Book Shop.,transaction
+2025-02-11,UPI,"UPI transaction of Rs 5,000 to Movie Tickets failed.",transaction
+2025-02-11,Bank,Salary credit: Rs 799 received in your account.,transaction
+2025-02-12,ShoppingApp,Your order has been shipped.,non_transaction
+2025-02-12,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-02-13,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-02-13,UPI,Your account received Rs 799 via UPI from A Kumar.,transaction
+2025-02-13,UPI,"Your account received Rs 25,000 via UPI from Sample Sender.",transaction
+2025-02-14,Bank,"Salary credit: Rs 1,250 received in your account.",transaction
+2025-02-14,StreamingApp,Your subscription renews next week.,non_transaction
+2025-02-14,UPI,Rs 250 spent using UPI at Metro Store.,transaction
+2025-02-15,Bank,Your card was used for Rs 199 at Electricity Board.,transaction
+2025-02-15,Instagram,New posts from accounts you follow.,non_transaction
+2025-02-15,Bank,"Salary credit: Rs 1,000 received in your account.",transaction
+2025-02-16,UPI,Rs 199 spent using UPI at Coffee House.,transaction
+2025-02-16,UPI,UPI payment of Rs 349 to Fuel Station successful.,transaction
+2025-02-16,Bank,"Your account has been debited by Rs 5,000 for Pharmacy.",transaction
+2025-02-17,Bank,"Your card was used for Rs 1,000 at Movie Tickets.",transaction
+2025-02-17,Instagram,You have a new Instagram follower.,non_transaction
+2025-02-17,Bank,Your password was changed successfully.,non_transaction
+2025-02-17,Bank,Your card was used for Rs 250 at Internet Provider.,transaction
+2025-02-18,PaymentApp,"Payment of Rs 1,000 at Mobile Store is complete.",transaction
+2025-02-18,Bank,"IMPS transfer of Rs 12,000 to City Restaurant completed.",transaction
+2025-02-18,UPI,Your payment of Rs 799 is pending at Electricity Board.,transaction
+2025-02-19,UPI,"Rs 5,000 spent using UPI at Movie Tickets.",transaction
+2025-02-19,UPI,UPI payment of Rs 650 to Bus Booking successful.,transaction
+2025-02-19,WhatsApp,You have a new WhatsApp message from A friend.,non_transaction
+2025-02-19,PaymentApp,"Payment of Rs 25,000 at Electricity Board is complete.",transaction
+2025-02-20,Bank,"Rs 25,000 debited from account ending 1234. Ref: TX464863.",transaction
+2025-02-20,PaymentApp,Rs 199 has been refunded by Grocery Store.,transaction
+2025-02-20,PaymentApp,"Bill payment of Rs 1,000 for Bus Booking successful.",transaction
+2025-02-21,PaymentApp,Rs 799 has been refunded by Food Corner.,transaction
+2025-02-21,Bank,"Your account has been debited by Rs 12,000 for Online Market.",transaction
+2025-02-22,StreamingApp,Your subscription renews next week.,non_transaction
+2025-02-22,UPI,"Your account received Rs 1,000 via UPI from Customer.",transaction
+2025-02-22,Bank,Your card was used for Rs 349 at Book Shop.,transaction
+2025-02-23,Bank,"INR 12,000 credited to your account from Customer.",transaction
+2025-02-23,Bank,IMPS transfer of Rs 799 to Online Market completed.,transaction
+2025-02-23,Bank,Your account security settings were updated.,non_transaction
+2025-02-23,UPI,Your account received Rs 120 via UPI from Sample Sender.,transaction
+2025-02-24,Bank,NEFT credit of Rs 49 received from Customer.,transaction
+2025-02-24,Bank,Your password was changed successfully.,non_transaction
+2025-02-24,UPI,"UPI transaction of Rs 1,250 to Electricity Board failed.",transaction
+2025-02-24,PaymentApp,Rs 500 has been refunded by Movie Tickets.,transaction
+2025-02-25,Bank,Rs 75 debited from account ending 1234. Ref: TX595951.,transaction
+2025-02-25,Bank,Your monthly account summary is available.,non_transaction
+2025-02-25,ShoppingApp,Special offer: save 10% on selected items today.,non_transaction
+2025-02-25,ShoppingApp,Your order has been shipped.,non_transaction
+2025-02-26,Bank,Salary credit: Rs 49 received in your account.,transaction
+2025-02-26,ShoppingApp,Special offer: save 25% on selected items today.,non_transaction
+2025-02-27,Bank,Your monthly account summary is available.,non_transaction
+2025-02-27,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-02-27,StreamingApp,Your subscription renews next week.,non_transaction
+2025-02-28,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-02-28,Instagram,Priya mentioned you in a comment.,non_transaction
+2025-02-28,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-03-01,UPI,Your account received Rs 650 via UPI from Employer.,transaction
+2025-03-01,Bank,Your bank statement is ready to download.,non_transaction
+2025-03-01,Instagram,New posts from accounts you follow.,non_transaction
+2025-03-02,Bank,"NEFT credit of Rs 12,000 received from Customer.",transaction
+2025-03-02,WhatsApp,Your friend Ravi shared a photo with you.,non_transaction
+2025-03-02,UPI,"UPI transaction of Rs 1,000 to Bus Booking failed.",transaction
+2025-03-03,Bank,IMPS transfer of Rs 500 to Online Market completed.,transaction
+2025-03-03,UPI,"Your payment of Rs 1,800 is pending at Mobile Store.",transaction
+2025-03-03,UPI,Your payment of Rs 799 is pending at Fresh Mart.,transaction
+2025-03-04,StreamingApp,Your subscription renews next week.,non_transaction
+2025-03-04,Bank,Your OTP is 299367. Do not share it with anyone.,non_transaction
+2025-03-05,ShoppingApp,Special offer: save 10% on selected items today.,non_transaction
+2025-03-05,Bank,Salary credit: Rs 75 received in your account.,transaction
+2025-03-05,Bank,"IMPS transfer of Rs 1,250 to Movie Tickets completed.",transaction
+2025-03-06,UPI,UPI transaction of Rs 799 to Grocery Store failed.,transaction
+2025-03-06,StreamingApp,Your subscription renews next week.,non_transaction
+2025-03-06,UPI,UPI payment of Rs 250 to Coffee House successful.,transaction
+2025-03-07,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-03-07,Bank,"INR 12,000 credited to your account from Customer.",transaction
+2025-03-07,Bank,Your password was changed successfully.,non_transaction
+2025-03-07,Bank,"Your card was used for Rs 25,000 at Fresh Mart.",transaction
+2025-03-08,Bank,Your account security settings were updated.,non_transaction
+2025-03-08,Bank,"IMPS transfer of Rs 5,000 to City Restaurant completed.",transaction
+2025-03-08,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-03-09,UPI,"UPI transaction of Rs 5,000 to Mobile Store failed.",transaction
+2025-03-09,Bank,Rs 199 debited from account ending 1234. Ref: TX745558.,transaction
+2025-03-09,Bank,NEFT credit of Rs 75 received from Family Account.,transaction
+2025-03-10,Bank,"Your card was used for Rs 1,800 at City Restaurant.",transaction
+2025-03-10,UPI,UPI transaction of Rs 75 to Online Market failed.,transaction
+2025-03-10,WhatsApp,Your friend Alex shared a photo with you.,non_transaction
+2025-03-10,WhatsApp,You have a new WhatsApp message from Alex.,non_transaction
+2025-03-11,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-03-11,Bank,Rs 650 withdrawn from your account at ATM.,transaction
+2025-03-11,Instagram,New posts from accounts you follow.,non_transaction
+2025-03-12,Instagram,A friend mentioned you in a comment.,non_transaction
+2025-03-12,Bank,"Your card was used for Rs 1,250 at Fresh Mart.",transaction
+2025-03-12,Bank,Rs 199 debited from account ending 1234. Ref: TX599380.,transaction
+2025-03-13,Phone,You have a missed call from +91-9640992677.,non_transaction
+2025-03-13,UPI,"Rs 1,000 spent using UPI at Pharmacy.",transaction
+2025-03-13,PaymentApp,"Bill payment of Rs 2,500 for Online Market successful.",transaction
+2025-03-13,Bank,Salary credit: Rs 120 received in your account.,transaction
+2025-03-14,Bank,"NEFT credit of Rs 1,250 received from Friend.",transaction
+2025-03-14,Bank,Rs 199 debited from account ending 1234. Ref: TX219971.,transaction
+2025-03-14,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-03-15,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-03-15,Bank,"INR 1,250 credited to your account from Family Account.",transaction
+2025-03-15,UPI,"Your account received Rs 25,000 via UPI from A Kumar.",transaction
+2025-03-15,Bank,Rs 199 debited from account ending 1234. Ref: TX490748.,transaction
+2025-03-16,PaymentApp,Rs 199 has been refunded by Online Market.,transaction
+2025-03-16,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-03-16,Bank,INR 500 credited to your account from Customer.,transaction
+2025-03-17,Bank,Your OTP is 220465. Do not share it with anyone.,non_transaction
+2025-03-17,Bank,"Your card was used for Rs 5,000 at Grocery Store.",transaction
+2025-03-17,Instagram,New posts from accounts you follow.,non_transaction
+2025-03-18,Bank,"NEFT credit of Rs 1,000 received from Family Account.",transaction
+2025-03-18,UPI,"Your account received Rs 2,500 via UPI from Ravi.",transaction
+2025-03-18,WhatsApp,You have a new WhatsApp message from Alex.,non_transaction
+2025-03-19,PaymentApp,Rs 349 has been refunded by Food Corner.,transaction
+2025-03-19,UPI,UPI payment of Rs 75 to Metro Store successful.,transaction
+2025-03-19,Instagram,You have a new Instagram follower.,non_transaction
+2025-03-19,Bank,"Salary credit: Rs 5,000 received in your account.",transaction
+2025-03-20,Bank,"INR 1,000 credited to your account from Customer.",transaction
+2025-03-20,Bank,IMPS transfer of Rs 75 to Fuel Station completed.,transaction
+2025-03-21,Bank,IMPS transfer of Rs 500 to Coffee House completed.,transaction
+2025-03-21,PaymentApp,Rs 199 has been refunded by Fresh Mart.,transaction
+2025-03-22,UPI,Your payment of Rs 650 is pending at Electricity Board.,transaction
+2025-03-22,Bank,Your OTP is 878086. Do not share it with anyone.,non_transaction
+2025-03-22,Bank,Salary credit: Rs 120 received in your account.,transaction
+2025-03-22,UPI,"Your payment of Rs 5,000 is pending at Book Shop.",transaction
+2025-03-23,Bank,Your bank statement is ready to download.,non_transaction
+2025-03-23,Instagram,You have a new Instagram follower.,non_transaction
+2025-03-24,Phone,You have a missed call from +91-9900801837.,non_transaction
+2025-03-24,PaymentApp,Rs 349 has been refunded by City Restaurant.,transaction
+2025-03-24,Bank,"Rs 1,800 withdrawn from your account at ATM.",transaction
+2025-03-24,ShoppingApp,Special offer: save 10% on selected items today.,non_transaction
+2025-03-25,UPI,Your account received Rs 120 via UPI from Sample Sender.,transaction
+2025-03-25,Bank,"Salary credit: Rs 1,250 received in your account.",transaction
+2025-03-25,UPI,"UPI payment of Rs 25,000 to Pharmacy successful.",transaction
+2025-03-26,Bank,Your OTP is 425486. Do not share it with anyone.,non_transaction
+2025-03-26,UPI,"Rs 1,800 spent using UPI at Grocery Store.",transaction
+2025-03-26,Instagram,You have a new Instagram follower.,non_transaction
+2025-03-27,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-03-27,PaymentApp,Bill payment of Rs 250 for Fresh Mart successful.,transaction
+2025-03-27,ShoppingApp,Your order has been shipped.,non_transaction
+2025-03-27,Bank,"Your card was used for Rs 12,000 at Pharmacy.",transaction
+2025-03-28,Bank,"IMPS transfer of Rs 2,500 to Online Market completed.",transaction
+2025-03-28,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-03-28,UPI,"Your payment of Rs 1,000 is pending at Book Shop.",transaction
+2025-03-29,UPI,"Your account received Rs 1,800 via UPI from Customer.",transaction
+2025-03-29,ShoppingApp,Special offer: save 40% on selected items today.,non_transaction
+2025-03-29,PaymentApp,Rs 250 has been refunded by Bus Booking.,transaction
+2025-03-30,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-03-30,Bank,"Rs 1,250 withdrawn from your account at ATM.",transaction
+2025-03-31,ShoppingApp,Special offer: save 20% on selected items today.,non_transaction
+2025-03-31,UPI,"Rs 1,250 spent using UPI at Internet Provider.",transaction
+2025-03-31,UPI,Your payment of Rs 250 is pending at Metro Store.,transaction
+2025-04-01,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-04-01,Bank,"Salary credit: Rs 1,000 received in your account.",transaction
+2025-04-01,Bank,"Your card was used for Rs 1,000 at Coffee House.",transaction
+2025-04-02,Bank,"Salary credit: Rs 12,000 received in your account.",transaction
+2025-04-02,Bank,Rs 349 debited from account ending 1234. Ref: TX940181.,transaction
+2025-04-02,YouTube,New videos are waiting for you.,non_transaction
+2025-04-03,Phone,You have a missed call from +91-9919390458.,non_transaction
+2025-04-03,Bank,Salary credit: Rs 250 received in your account.,transaction
+2025-04-04,Bank,Your OTP is 155843. Do not share it with anyone.,non_transaction
+2025-04-04,Bank,"Your card was used for Rs 2,500 at City Restaurant.",transaction
+2025-04-04,Bank,"INR 1,250 credited to your account from Ravi.",transaction
+2025-04-05,PaymentApp,Bill payment of Rs 250 for Coffee House successful.,transaction
+2025-04-05,Bank,Your account has been debited by Rs 120 for Fresh Mart.,transaction
+2025-04-06,Bank,Rs 199 debited from account ending 1234. Ref: TX349183.,transaction
+2025-04-06,UPI,Rs 650 spent using UPI at Online Market.,transaction
+2025-04-06,Instagram,You have a new Instagram follower.,non_transaction
+2025-04-07,Bank,Your password was changed successfully.,non_transaction
+2025-04-07,UPI,UPI transaction of Rs 650 to Mobile Store failed.,transaction
+2025-04-08,UPI,UPI transaction of Rs 120 to Electricity Board failed.,transaction
+2025-04-08,Phone,You have a missed call from +91-9604803700.,non_transaction
+2025-04-09,Bank,Your OTP is 117031. Do not share it with anyone.,non_transaction
+2025-04-09,Bank,Your OTP is 789023. Do not share it with anyone.,non_transaction
+2025-04-10,ShoppingApp,Your order has been shipped.,non_transaction
+2025-04-10,PaymentApp,"Payment of Rs 12,000 at Movie Tickets is complete.",transaction
+2025-04-11,Instagram,You have a new Instagram follower.,non_transaction
+2025-04-11,UPI,Rs 500 spent using UPI at Internet Provider.,transaction
+2025-04-11,Phone,You have a missed call from +91-9608309128.,non_transaction
+2025-04-12,Bank,"Rs 1,000 withdrawn from your account at ATM.",transaction
+2025-04-12,PaymentApp,Rs 799 has been refunded by City Restaurant.,transaction
+2025-04-12,UPI,"Your payment of Rs 12,000 is pending at Internet Provider.",transaction
+2025-04-13,PaymentApp,"Bill payment of Rs 1,800 for Internet Provider successful.",transaction
+2025-04-13,UPI,"UPI payment of Rs 5,000 to City Restaurant successful.",transaction
+2025-04-13,Bank,Your bank statement is ready to download.,non_transaction
+2025-04-14,Bank,"IMPS transfer of Rs 1,000 to Pharmacy completed.",transaction
+2025-04-14,Bank,"Salary credit: Rs 1,800 received in your account.",transaction
+2025-04-15,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-04-15,UPI,"Your payment of Rs 1,800 is pending at Electricity Board.",transaction
+2025-04-15,WhatsApp,You have a new WhatsApp message from Sam.,non_transaction
+2025-04-16,UPI,UPI payment of Rs 650 to Coffee House successful.,transaction
+2025-04-16,UPI,Rs 250 spent using UPI at Bus Booking.,transaction
+2025-04-16,UPI,UPI payment of Rs 250 to Electricity Board successful.,transaction
+2025-04-16,Bank,NEFT credit of Rs 650 received from A Kumar.,transaction
+2025-04-17,UPI,Your payment of Rs 199 is pending at Book Shop.,transaction
+2025-04-17,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-04-17,UPI,Your account received Rs 120 via UPI from Ravi.,transaction
+2025-04-18,ShoppingApp,Your order has been shipped.,non_transaction
+2025-04-18,Bank,"IMPS transfer of Rs 1,000 to Grocery Store completed.",transaction
+2025-04-18,Bank,Your bank statement is ready to download.,non_transaction
+2025-04-18,ShoppingApp,Special offer: save 50% on selected items today.,non_transaction
+2025-04-19,UPI,"UPI transaction of Rs 12,000 to Coffee House failed.",transaction
+2025-04-19,Instagram,You have a new Instagram follower.,non_transaction
+2025-04-19,Phone,You have a missed call from +91-9984053945.,non_transaction
+2025-04-20,PaymentApp,Rs 120 has been refunded by Pharmacy.,transaction
+2025-04-20,UPI,Your account received Rs 349 via UPI from Ravi.,transaction
+2025-04-21,Phone,You have a missed call from +91-9273910700.,non_transaction
+2025-04-21,Bank,"Your card was used for Rs 1,800 at Electricity Board.",transaction
+2025-04-22,Bank,NEFT credit of Rs 250 received from Family Account.,transaction
+2025-04-22,PaymentApp,Payment of Rs 250 at Metro Store is complete.,transaction
+2025-04-23,Bank,Your password was changed successfully.,non_transaction
+2025-04-23,Bank,NEFT credit of Rs 500 received from Friend.,transaction
+2025-04-23,WhatsApp,You have a new WhatsApp message from Priya.,non_transaction
+2025-04-24,UPI,"Your payment of Rs 1,000 is pending at Pharmacy.",transaction
+2025-04-24,Bank,"Salary credit: Rs 5,000 received in your account.",transaction
+2025-04-24,UPI,"Your account received Rs 1,250 via UPI from Customer.",transaction
+2025-04-25,ShoppingApp,Special offer: save 30% on selected items today.,non_transaction
+2025-04-25,Bank,Salary credit: Rs 199 received in your account.,transaction
+2025-04-25,UPI,"Rs 1,000 spent using UPI at Online Market.",transaction
+2025-04-26,PaymentApp,"Payment of Rs 1,250 at Internet Provider is complete.",transaction
+2025-04-26,PaymentApp,"Payment of Rs 25,000 at Electricity Board is complete.",transaction
+2025-04-26,StreamingApp,Your subscription renews next week.,non_transaction
+2025-04-26,Bank,Your card was used for Rs 500 at Mobile Store.,transaction
+2025-04-27,PaymentApp,"Bill payment of Rs 1,000 for Electricity Board successful.",transaction
+2025-04-27,UPI,Your account received Rs 799 via UPI from Family Account.,transaction
+2025-04-28,UPI,Your payment of Rs 75 is pending at Mobile Store.,transaction
+2025-04-28,Bank,IMPS transfer of Rs 120 to Online Market completed.,transaction
+2025-04-28,YouTube,New videos are waiting for you.,non_transaction
+2025-04-28,Bank,"INR 2,500 credited to your account from Sample Sender.",transaction
+2025-04-29,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-04-29,UPI,Rs 250 spent using UPI at Movie Tickets.,transaction
+2025-04-29,Bank,Salary credit: Rs 250 received in your account.,transaction
+2025-04-30,ShoppingApp,Your order has been shipped.,non_transaction
+2025-04-30,Bank,Your password was changed successfully.,non_transaction
+2025-04-30,Bank,"IMPS transfer of Rs 25,000 to Grocery Store completed.",transaction
+2025-05-01,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-05-01,WhatsApp,You have a new WhatsApp message from Kiran.,non_transaction
+2025-05-01,Bank,Your password was changed successfully.,non_transaction
+2025-05-02,UPI,Your payment of Rs 250 is pending at Grocery Store.,transaction
+2025-05-02,Bank,INR 500 credited to your account from Employer.,transaction
+2025-05-02,Bank,Rs 500 debited from account ending 1234. Ref: TX912617.,transaction
+2025-05-02,StreamingApp,Your subscription renews next week.,non_transaction
+2025-05-03,PaymentApp,"Rs 25,000 has been refunded by Electricity Board.",transaction
+2025-05-03,WhatsApp,Your friend Kiran shared a photo with you.,non_transaction
+2025-05-03,YouTube,New videos are waiting for you.,non_transaction
+2025-05-04,Bank,"Your card was used for Rs 1,000 at Coffee House.",transaction
+2025-05-04,PaymentApp,"Bill payment of Rs 1,250 for Pharmacy successful.",transaction
+2025-05-04,YouTube,New videos are waiting for you.,non_transaction
+2025-05-05,Bank,Your monthly account summary is available.,non_transaction
+2025-05-05,Bank,IMPS transfer of Rs 120 to Food Corner completed.,transaction
+2025-05-05,PaymentApp,Bill payment of Rs 500 for Fuel Station successful.,transaction
+2025-05-05,Bank,NEFT credit of Rs 250 received from Friend.,transaction
+2025-05-06,Bank,Your card was used for Rs 650 at Fresh Mart.,transaction
+2025-05-06,PaymentApp,Bill payment of Rs 199 for Bus Booking successful.,transaction
+2025-05-06,PaymentApp,"Payment of Rs 5,000 at Bus Booking is complete.",transaction
+2025-05-07,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-05-07,Instagram,You have a new Instagram follower.,non_transaction
+2025-05-07,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-05-08,Bank,Your monthly account summary is available.,non_transaction
+2025-05-08,WhatsApp,You have a new WhatsApp message from Ravi.,non_transaction
+2025-05-09,PaymentApp,Bill payment of Rs 250 for Grocery Store successful.,transaction
+2025-05-09,Bank,"INR 1,250 credited to your account from Customer.",transaction
+2025-05-09,Bank,Your bank statement is ready to download.,non_transaction
+2025-05-10,Bank,Rs 349 withdrawn from your account at ATM.,transaction
+2025-05-10,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-05-10,Bank,Your bank statement is ready to download.,non_transaction
+2025-05-11,Bank,"Your card was used for Rs 12,000 at Coffee House.",transaction
+2025-05-11,Bank,Your account has been debited by Rs 799 for Bus Booking.,transaction
+2025-05-12,Bank,"INR 12,000 credited to your account from Ravi.",transaction
+2025-05-12,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-05-12,Bank,Your card was used for Rs 650 at Metro Store.,transaction
+2025-05-13,Instagram,New posts from accounts you follow.,non_transaction
+2025-05-13,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-05-13,UPI,"UPI payment of Rs 12,000 to Electricity Board successful.",transaction
+2025-05-13,Bank,INR 75 credited to your account from Friend.,transaction
+2025-05-14,UPI,Your account received Rs 349 via UPI from Sample Sender.,transaction
+2025-05-14,Bank,"Rs 25,000 withdrawn from your account at ATM.",transaction
+2025-05-14,WhatsApp,Your friend Sam shared a photo with you.,non_transaction
+2025-05-15,Bank,IMPS transfer of Rs 49 to Online Market completed.,transaction
+2025-05-15,Bank,Rs 120 withdrawn from your account at ATM.,transaction
+2025-05-16,UPI,Rs 120 spent using UPI at Internet Provider.,transaction
+2025-05-16,PaymentApp,Payment of Rs 250 at Coffee House is complete.,transaction
+2025-05-17,UPI,"Your payment of Rs 12,000 is pending at Grocery Store.",transaction
+2025-05-17,UPI,"Your account received Rs 1,800 via UPI from Ravi.",transaction
+2025-05-17,UPI,Your account received Rs 650 via UPI from A Kumar.,transaction
+2025-05-17,Bank,"IMPS transfer of Rs 12,000 to Bus Booking completed.",transaction
+2025-05-18,Bank,Your card was used for Rs 650 at Pharmacy.,transaction
+2025-05-18,Bank,INR 75 credited to your account from Customer.,transaction
+2025-05-18,WhatsApp,You have a new WhatsApp message from Sam.,non_transaction
+2025-05-18,WhatsApp,Your friend Kiran shared a photo with you.,non_transaction
+2025-05-19,Bank,Your monthly account summary is available.,non_transaction
+2025-05-19,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-05-19,Bank,Your password was changed successfully.,non_transaction
+2025-05-20,UPI,Your account received Rs 650 via UPI from Family Account.,transaction
+2025-05-20,PaymentApp,"Payment of Rs 5,000 at Electricity Board is complete.",transaction
+2025-05-20,Bank,Your monthly account summary is available.,non_transaction
+2025-05-21,UPI,Your payment of Rs 349 is pending at Coffee House.,transaction
+2025-05-21,Bank,"Your card was used for Rs 1,000 at Grocery Store.",transaction
+2025-05-21,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-05-21,UPI,Your payment of Rs 650 is pending at Book Shop.,transaction
+2025-05-22,Bank,Your OTP is 859782. Do not share it with anyone.,non_transaction
+2025-05-22,Bank,"NEFT credit of Rs 2,500 received from Friend.",transaction
+2025-05-23,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-05-23,Bank,"Rs 1,250 withdrawn from your account at ATM.",transaction
+2025-05-24,Instagram,A friend mentioned you in a comment.,non_transaction
+2025-05-24,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-05-24,Bank,Your monthly account summary is available.,non_transaction
+2025-05-25,PaymentApp,"Bill payment of Rs 12,000 for City Restaurant successful.",transaction
+2025-05-25,PaymentApp,Rs 500 has been refunded by Food Corner.,transaction
+2025-05-25,Bank,Your card was used for Rs 250 at Fresh Mart.,transaction
+2025-05-26,Bank,"Rs 1,250 withdrawn from your account at ATM.",transaction
+2025-05-26,StreamingApp,Your subscription renews next week.,non_transaction
+2025-05-26,PaymentApp,"Bill payment of Rs 25,000 for Pharmacy successful.",transaction
+2025-05-26,Bank,Your bank statement is ready to download.,non_transaction
+2025-05-27,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-05-27,Instagram,You have a new Instagram follower.,non_transaction
+2025-05-27,Bank,Your card was used for Rs 120 at Movie Tickets.,transaction
+2025-05-28,UPI,UPI transaction of Rs 75 to Mobile Store failed.,transaction
+2025-05-28,StreamingApp,Your subscription renews next week.,non_transaction
+2025-05-28,Bank,Rs 49 debited from account ending 1234. Ref: TX857273.,transaction
+2025-05-29,Bank,IMPS transfer of Rs 49 to Electricity Board completed.,transaction
+2025-05-29,Bank,Your bank statement is ready to download.,non_transaction
+2025-05-29,Bank,"NEFT credit of Rs 1,800 received from Sample Sender.",transaction
+2025-05-30,UPI,"Your payment of Rs 12,000 is pending at Mobile Store.",transaction
+2025-05-30,UPI,UPI payment of Rs 75 to City Restaurant successful.,transaction
+2025-05-31,UPI,Rs 49 spent using UPI at Movie Tickets.,transaction
+2025-05-31,Bank,"Rs 1,250 debited from account ending 1234. Ref: TX199994.",transaction
+2025-05-31,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-05-31,UPI,Rs 120 spent using UPI at Bus Booking.,transaction
+2025-06-01,PaymentApp,Rs 49 has been refunded by Fuel Station.,transaction
+2025-06-01,Bank,Your monthly account summary is available.,non_transaction
+2025-06-02,UPI,"Your payment of Rs 1,250 is pending at Online Market.",transaction
+2025-06-02,UPI,"UPI payment of Rs 1,800 to Fresh Mart successful.",transaction
+2025-06-02,UPI,"UPI payment of Rs 1,250 to Mobile Store successful.",transaction
+2025-06-03,ShoppingApp,Your order has been shipped.,non_transaction
+2025-06-03,StreamingApp,Your subscription renews next week.,non_transaction
+2025-06-03,UPI,Your payment of Rs 120 is pending at Coffee House.,transaction
+2025-06-03,Instagram,You have a new Instagram follower.,non_transaction
+2025-06-04,ShoppingApp,Your order has been shipped.,non_transaction
+2025-06-04,WhatsApp,Your friend Ravi shared a photo with you.,non_transaction
+2025-06-04,PaymentApp,"Payment of Rs 5,000 at Pharmacy is complete.",transaction
+2025-06-05,UPI,"UPI payment of Rs 1,800 to Electricity Board successful.",transaction
+2025-06-05,ShoppingApp,Your order has been shipped.,non_transaction
+2025-06-05,UPI,UPI payment of Rs 650 to Mobile Store successful.,transaction
+2025-06-05,Bank,Your bank statement is ready to download.,non_transaction
+2025-06-06,PaymentApp,"Payment of Rs 5,000 at Book Shop is complete.",transaction
+2025-06-06,UPI,"UPI payment of Rs 1,800 to Book Shop successful.",transaction
+2025-06-06,Instagram,New posts from accounts you follow.,non_transaction
+2025-06-06,Bank,"Your account has been debited by Rs 2,500 for Food Corner.",transaction
+2025-06-07,ShoppingApp,Your order has been shipped.,non_transaction
+2025-06-07,Instagram,New posts from accounts you follow.,non_transaction
+2025-06-07,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-06-07,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-06-08,Bank,"NEFT credit of Rs 2,500 received from A Kumar.",transaction
+2025-06-08,PaymentApp,Payment of Rs 49 at Movie Tickets is complete.,transaction
+2025-06-08,Bank,IMPS transfer of Rs 120 to Grocery Store completed.,transaction
+2025-06-09,ShoppingApp,Special offer: save 20% on selected items today.,non_transaction
+2025-06-09,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-06-09,UPI,"Your payment of Rs 5,000 is pending at Electricity Board.",transaction
+2025-06-09,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-06-10,Bank,Your OTP is 742439. Do not share it with anyone.,non_transaction
+2025-06-10,UPI,"Your payment of Rs 1,250 is pending at Coffee House.",transaction
+2025-06-10,Bank,NEFT credit of Rs 650 received from Customer.,transaction
+2025-06-11,UPI,"Your payment of Rs 12,000 is pending at Coffee House.",transaction
+2025-06-11,ShoppingApp,Special offer: save 10% on selected items today.,non_transaction
+2025-06-11,UPI,UPI payment of Rs 199 to Grocery Store successful.,transaction
+2025-06-12,Bank,Salary credit: Rs 500 received in your account.,transaction
+2025-06-12,Bank,"Salary credit: Rs 12,000 received in your account.",transaction
+2025-06-12,Bank,INR 49 credited to your account from Family Account.,transaction
+2025-06-13,Bank,Your bank statement is ready to download.,non_transaction
+2025-06-13,PaymentApp,"Rs 5,000 has been refunded by Pharmacy.",transaction
+2025-06-14,Bank,Your bank statement is ready to download.,non_transaction
+2025-06-14,Bank,"Rs 12,000 withdrawn from your account at ATM.",transaction
+2025-06-14,Bank,Rs 500 withdrawn from your account at ATM.,transaction
+2025-06-14,Instagram,You have a new Instagram follower.,non_transaction
+2025-06-15,Bank,"Rs 12,000 withdrawn from your account at ATM.",transaction
+2025-06-15,Phone,You have a missed call from +91-9517298229.,non_transaction
+2025-06-15,Bank,Your password was changed successfully.,non_transaction
+2025-06-16,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-06-16,Bank,INR 650 credited to your account from A Kumar.,transaction
+2025-06-16,UPI,"Your account received Rs 2,500 via UPI from Friend.",transaction
+2025-06-17,PaymentApp,Bill payment of Rs 349 for Electricity Board successful.,transaction
+2025-06-17,PaymentApp,"Payment of Rs 1,250 at Grocery Store is complete.",transaction
+2025-06-17,UPI,UPI transaction of Rs 49 to Pharmacy failed.,transaction
+2025-06-17,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-06-18,Bank,"Salary credit: Rs 25,000 received in your account.",transaction
+2025-06-18,Bank,"Your card was used for Rs 1,000 at Fresh Mart.",transaction
+2025-06-18,PaymentApp,"Payment of Rs 12,000 at Mobile Store is complete.",transaction
+2025-06-18,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-06-19,Bank,Your OTP is 893547. Do not share it with anyone.,non_transaction
+2025-06-19,WhatsApp,Your friend Kiran shared a photo with you.,non_transaction
+2025-06-19,Bank,Your account security settings were updated.,non_transaction
+2025-06-20,UPI,"UPI payment of Rs 12,000 to Grocery Store successful.",transaction
+2025-06-20,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-06-20,Instagram,New posts from accounts you follow.,non_transaction
+2025-06-21,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-06-21,PaymentApp,"Payment of Rs 1,250 at Movie Tickets is complete.",transaction
+2025-06-21,Bank,INR 250 credited to your account from Sample Sender.,transaction
+2025-06-22,ShoppingApp,Special offer: save 50% on selected items today.,non_transaction
+2025-06-22,PaymentApp,Rs 650 has been refunded by Coffee House.,transaction
+2025-06-23,Bank,"NEFT credit of Rs 5,000 received from Employer.",transaction
+2025-06-23,Instagram,You have a new Instagram follower.,non_transaction
+2025-06-23,Bank,Your OTP is 443187. Do not share it with anyone.,non_transaction
+2025-06-23,UPI,"UPI payment of Rs 12,000 to Bus Booking successful.",transaction
+2025-06-24,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-06-24,Bank,"NEFT credit of Rs 1,250 received from Family Account.",transaction
+2025-06-24,UPI,"Your account received Rs 25,000 via UPI from Family Account.",transaction
+2025-06-25,Bank,Salary credit: Rs 49 received in your account.,transaction
+2025-06-25,Bank,"Your account has been debited by Rs 5,000 for Fuel Station.",transaction
+2025-06-26,Bank,NEFT credit of Rs 120 received from Family Account.,transaction
+2025-06-26,PaymentApp,Payment of Rs 75 at Online Market is complete.,transaction
+2025-06-26,Bank,Your account security settings were updated.,non_transaction
+2025-06-27,PaymentApp,Bill payment of Rs 120 for Metro Store successful.,transaction
+2025-06-27,Bank,Salary credit: Rs 49 received in your account.,transaction
+2025-06-28,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-06-28,UPI,UPI payment of Rs 199 to City Restaurant successful.,transaction
+2025-06-29,UPI,Your account received Rs 250 via UPI from Friend.,transaction
+2025-06-29,PaymentApp,"Payment of Rs 12,000 at Food Corner is complete.",transaction
+2025-06-29,ShoppingApp,Special offer: save 30% on selected items today.,non_transaction
+2025-06-30,Bank,INR 250 credited to your account from A Kumar.,transaction
+2025-06-30,Bank,Your OTP is 929504. Do not share it with anyone.,non_transaction
+2025-06-30,UPI,UPI payment of Rs 650 to Electricity Board successful.,transaction
+2025-07-01,WhatsApp,You have a new WhatsApp message from A friend.,non_transaction
+2025-07-01,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-07-01,Bank,"Your card was used for Rs 25,000 at Online Market.",transaction
+2025-07-02,Instagram,You have a new Instagram follower.,non_transaction
+2025-07-02,Bank,"Rs 1,800 debited from account ending 1234. Ref: TX281162.",transaction
+2025-07-02,Instagram,You have a new Instagram follower.,non_transaction
+2025-07-02,UPI,Rs 75 spent using UPI at Coffee House.,transaction
+2025-07-03,Phone,You have a missed call from +91-9531942087.,non_transaction
+2025-07-03,UPI,Your account received Rs 799 via UPI from Family Account.,transaction
+2025-07-03,Bank,Rs 250 withdrawn from your account at ATM.,transaction
+2025-07-04,Bank,Rs 650 debited from account ending 1234. Ref: TX190400.,transaction
+2025-07-04,Instagram,Priya mentioned you in a comment.,non_transaction
+2025-07-05,Bank,Your bank statement is ready to download.,non_transaction
+2025-07-05,Bank,Your bank statement is ready to download.,non_transaction
+2025-07-05,YouTube,New videos are waiting for you.,non_transaction
+2025-07-06,Instagram,Alex mentioned you in a comment.,non_transaction
+2025-07-06,UPI,UPI payment of Rs 799 to Movie Tickets successful.,transaction
+2025-07-06,Bank,"Salary credit: Rs 1,800 received in your account.",transaction
+2025-07-07,Bank,NEFT credit of Rs 199 received from Friend.,transaction
+2025-07-07,Bank,Your account security settings were updated.,non_transaction
+2025-07-07,WhatsApp,You have a new WhatsApp message from Sam.,non_transaction
+2025-07-08,Bank,Your bank statement is ready to download.,non_transaction
+2025-07-08,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-07-08,ShoppingApp,Your order has been shipped.,non_transaction
+2025-07-08,UPI,Rs 349 spent using UPI at Fuel Station.,transaction
+2025-07-09,Instagram,You have a new Instagram follower.,non_transaction
+2025-07-09,ShoppingApp,Your order has been shipped.,non_transaction
+2025-07-10,Bank,IMPS transfer of Rs 650 to Pharmacy completed.,transaction
+2025-07-10,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-07-10,Bank,"Your account has been debited by Rs 5,000 for Fresh Mart.",transaction
+2025-07-11,WhatsApp,You have a new WhatsApp message from Ravi.,non_transaction
+2025-07-11,Bank,IMPS transfer of Rs 199 to Fuel Station completed.,transaction
+2025-07-11,UPI,Rs 250 spent using UPI at Movie Tickets.,transaction
+2025-07-12,Phone,You have a missed call from +91-9592265554.,non_transaction
+2025-07-12,Instagram,You have a new Instagram follower.,non_transaction
+2025-07-13,UPI,"Rs 5,000 spent using UPI at Bus Booking.",transaction
+2025-07-13,PaymentApp,"Rs 2,500 has been refunded by Movie Tickets.",transaction
+2025-07-13,Bank,Salary credit: Rs 799 received in your account.,transaction
+2025-07-13,Bank,INR 250 credited to your account from Ravi.,transaction
+2025-07-14,Bank,"INR 1,800 credited to your account from Ravi.",transaction
+2025-07-14,Bank,NEFT credit of Rs 199 received from Ravi.,transaction
+2025-07-14,Instagram,New posts from accounts you follow.,non_transaction
+2025-07-14,Bank,"Your card was used for Rs 1,800 at Online Market.",transaction
+2025-07-15,PaymentApp,Payment of Rs 49 at Online Market is complete.,transaction
+2025-07-15,Bank,Your card was used for Rs 199 at Pharmacy.,transaction
+2025-07-15,Instagram,Alex mentioned you in a comment.,non_transaction
+2025-07-16,UPI,"Your payment of Rs 1,800 is pending at Bus Booking.",transaction
+2025-07-16,Bank,NEFT credit of Rs 120 received from A Kumar.,transaction
+2025-07-16,WhatsApp,Your friend Sam shared a photo with you.,non_transaction
+2025-07-17,Bank,Salary credit: Rs 75 received in your account.,transaction
+2025-07-17,Bank,Your monthly account summary is available.,non_transaction
+2025-07-17,UPI,UPI transaction of Rs 500 to Internet Provider failed.,transaction
+2025-07-18,UPI,Your account received Rs 75 via UPI from Friend.,transaction
+2025-07-18,Bank,"IMPS transfer of Rs 25,000 to Online Market completed.",transaction
+2025-07-18,Bank,"NEFT credit of Rs 2,500 received from Employer.",transaction
+2025-07-19,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-07-19,PaymentApp,"Bill payment of Rs 1,800 for Internet Provider successful.",transaction
+2025-07-19,Bank,NEFT credit of Rs 349 received from Family Account.,transaction
+2025-07-20,Bank,NEFT credit of Rs 75 received from Employer.,transaction
+2025-07-20,Bank,Your card was used for Rs 349 at City Restaurant.,transaction
+2025-07-20,UPI,Rs 650 spent using UPI at Mobile Store.,transaction
+2025-07-21,PaymentApp,Payment of Rs 349 at Fuel Station is complete.,transaction
+2025-07-21,Bank,Your OTP is 837623. Do not share it with anyone.,non_transaction
+2025-07-21,UPI,Your account received Rs 500 via UPI from Sample Sender.,transaction
+2025-07-21,PaymentApp,"Payment of Rs 25,000 at Fresh Mart is complete.",transaction
+2025-07-22,WhatsApp,You have a new WhatsApp message from Kiran.,non_transaction
+2025-07-22,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-07-22,ShoppingApp,Your order has been shipped.,non_transaction
+2025-07-23,Phone,You have a missed call from +91-9856491925.,non_transaction
+2025-07-23,Bank,Your monthly account summary is available.,non_transaction
+2025-07-23,PaymentApp,"Payment of Rs 5,000 at Coffee House is complete.",transaction
+2025-07-24,UPI,UPI transaction of Rs 650 to Bus Booking failed.,transaction
+2025-07-24,Bank,"IMPS transfer of Rs 1,000 to Metro Store completed.",transaction
+2025-07-24,UPI,Your payment of Rs 75 is pending at Metro Store.,transaction
+2025-07-25,Instagram,Priya mentioned you in a comment.,non_transaction
+2025-07-25,UPI,"UPI transaction of Rs 1,250 to Metro Store failed.",transaction
+2025-07-25,ShoppingApp,Your order has been shipped.,non_transaction
+2025-07-26,Bank,Your OTP is 213282. Do not share it with anyone.,non_transaction
+2025-07-26,UPI,"Your payment of Rs 12,000 is pending at Movie Tickets.",transaction
+2025-07-26,StreamingApp,Your subscription renews next week.,non_transaction
+2025-07-27,Bank,Your password was changed successfully.,non_transaction
+2025-07-27,UPI,UPI payment of Rs 75 to Book Shop successful.,transaction
+2025-07-28,Instagram,You have a new Instagram follower.,non_transaction
+2025-07-28,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-07-28,WhatsApp,You have a new WhatsApp message from Priya.,non_transaction
+2025-07-29,Bank,"INR 1,250 credited to your account from Ravi.",transaction
+2025-07-29,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-07-29,UPI,"Rs 2,500 spent using UPI at Mobile Store.",transaction
+2025-07-29,UPI,"Rs 1,800 spent using UPI at Fresh Mart.",transaction
+2025-07-30,Instagram,New posts from accounts you follow.,non_transaction
+2025-07-30,Bank,IMPS transfer of Rs 120 to Pharmacy completed.,transaction
+2025-07-30,UPI,"Your payment of Rs 25,000 is pending at Pharmacy.",transaction
+2025-07-31,Bank,Your monthly account summary is available.,non_transaction
+2025-07-31,UPI,Rs 799 spent using UPI at Pharmacy.,transaction
+2025-08-01,Bank,Your password was changed successfully.,non_transaction
+2025-08-01,Instagram,You have a new Instagram follower.,non_transaction
+2025-08-01,Bank,Your card was used for Rs 75 at Grocery Store.,transaction
+2025-08-02,StreamingApp,Your subscription renews next week.,non_transaction
+2025-08-02,UPI,Rs 250 spent using UPI at City Restaurant.,transaction
+2025-08-02,PaymentApp,Payment of Rs 500 at Coffee House is complete.,transaction
+2025-08-02,UPI,"UPI payment of Rs 5,000 to Fuel Station successful.",transaction
+2025-08-03,YouTube,New videos are waiting for you.,non_transaction
+2025-08-03,UPI,"Your payment of Rs 1,250 is pending at Grocery Store.",transaction
+2025-08-03,Bank,"Your account has been debited by Rs 5,000 for City Restaurant.",transaction
+2025-08-04,Bank,INR 199 credited to your account from Sample Sender.,transaction
+2025-08-04,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-08-04,Bank,Your password was changed successfully.,non_transaction
+2025-08-05,UPI,Your payment of Rs 75 is pending at Online Market.,transaction
+2025-08-05,PaymentApp,Bill payment of Rs 799 for Internet Provider successful.,transaction
+2025-08-05,Bank,"IMPS transfer of Rs 1,000 to Book Shop completed.",transaction
+2025-08-06,Bank,Your account security settings were updated.,non_transaction
+2025-08-06,ShoppingApp,Your order has been shipped.,non_transaction
+2025-08-07,Bank,"Rs 5,000 withdrawn from your account at ATM.",transaction
+2025-08-07,UPI,UPI transaction of Rs 75 to Electricity Board failed.,transaction
+2025-08-08,UPI,Your payment of Rs 250 is pending at Coffee House.,transaction
+2025-08-08,WhatsApp,You have a new WhatsApp message from Sam.,non_transaction
+2025-08-09,Bank,Salary credit: Rs 75 received in your account.,transaction
+2025-08-09,UPI,"UPI transaction of Rs 12,000 to Electricity Board failed.",transaction
+2025-08-10,Bank,Your account security settings were updated.,non_transaction
+2025-08-10,PaymentApp,"Bill payment of Rs 1,800 for Food Corner successful.",transaction
+2025-08-11,Instagram,You have a new Instagram follower.,non_transaction
+2025-08-11,Bank,Rs 650 withdrawn from your account at ATM.,transaction
+2025-08-11,Bank,Rs 49 debited from account ending 1234. Ref: TX904858.,transaction
+2025-08-12,UPI,Your account received Rs 349 via UPI from Sample Sender.,transaction
+2025-08-12,Bank,IMPS transfer of Rs 799 to Online Market completed.,transaction
+2025-08-13,Bank,"Rs 12,000 withdrawn from your account at ATM.",transaction
+2025-08-13,Bank,Your monthly account summary is available.,non_transaction
+2025-08-13,Bank,Your OTP is 722615. Do not share it with anyone.,non_transaction
+2025-08-14,Bank,"INR 25,000 credited to your account from Family Account.",transaction
+2025-08-14,YouTube,New videos are waiting for you.,non_transaction
+2025-08-14,UPI,Your account received Rs 650 via UPI from A Kumar.,transaction
+2025-08-15,ShoppingApp,Special offer: save 10% on selected items today.,non_transaction
+2025-08-15,YouTube,New videos are waiting for you.,non_transaction
+2025-08-15,Bank,"Rs 1,250 withdrawn from your account at ATM.",transaction
+2025-08-15,StreamingApp,Your subscription renews next week.,non_transaction
+2025-08-16,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-08-16,Bank,NEFT credit of Rs 349 received from Family Account.,transaction
+2025-08-16,UPI,UPI transaction of Rs 650 to Movie Tickets failed.,transaction
+2025-08-17,ShoppingApp,Your order has been shipped.,non_transaction
+2025-08-17,Bank,"INR 25,000 credited to your account from Sample Sender.",transaction
+2025-08-17,Instagram,New posts from accounts you follow.,non_transaction
+2025-08-17,UPI,"Your payment of Rs 1,000 is pending at Online Market.",transaction
+2025-08-18,Bank,"Rs 1,250 withdrawn from your account at ATM.",transaction
+2025-08-18,PaymentApp,Payment of Rs 120 at Pharmacy is complete.,transaction
+2025-08-18,ShoppingApp,Your order has been shipped.,non_transaction
+2025-08-19,PaymentApp,Payment of Rs 349 at Pharmacy is complete.,transaction
+2025-08-19,ShoppingApp,Special offer: save 25% on selected items today.,non_transaction
+2025-08-19,PaymentApp,"Bill payment of Rs 2,500 for Fresh Mart successful.",transaction
+2025-08-20,WhatsApp,You have a new WhatsApp message from Ravi.,non_transaction
+2025-08-20,Bank,Your account has been debited by Rs 650 for Fuel Station.,transaction
+2025-08-20,Bank,"INR 2,500 credited to your account from Friend.",transaction
+2025-08-21,UPI,"Rs 1,000 spent using UPI at Book Shop.",transaction
+2025-08-21,PaymentApp,"Rs 5,000 has been refunded by Internet Provider.",transaction
+2025-08-21,PaymentApp,"Bill payment of Rs 1,800 for Coffee House successful.",transaction
+2025-08-22,Bank,Your card was used for Rs 250 at Fuel Station.,transaction
+2025-08-22,Bank,Your bank statement is ready to download.,non_transaction
+2025-08-22,Bank,Your monthly account summary is available.,non_transaction
+2025-08-22,Instagram,New posts from accounts you follow.,non_transaction
+2025-08-23,Bank,"INR 5,000 credited to your account from Employer.",transaction
+2025-08-23,PaymentApp,Bill payment of Rs 250 for Fuel Station successful.,transaction
+2025-08-24,Bank,INR 799 credited to your account from Friend.,transaction
+2025-08-24,Bank,INR 199 credited to your account from A Kumar.,transaction
+2025-08-25,Bank,Rs 799 withdrawn from your account at ATM.,transaction
+2025-08-25,Bank,"Rs 1,000 debited from account ending 1234. Ref: TX674765.",transaction
+2025-08-26,StreamingApp,Your subscription renews next week.,non_transaction
+2025-08-26,Instagram,Kiran mentioned you in a comment.,non_transaction
+2025-08-26,Phone,You have a missed call from +91-9208759822.,non_transaction
+2025-08-26,Bank,Your account security settings were updated.,non_transaction
+2025-08-27,PaymentApp,Payment of Rs 75 at Grocery Store is complete.,transaction
+2025-08-27,ShoppingApp,Your order has been shipped.,non_transaction
+2025-08-28,UPI,Your account received Rs 349 via UPI from Family Account.,transaction
+2025-08-28,YouTube,New videos are waiting for you.,non_transaction
+2025-08-29,UPI,"Your payment of Rs 2,500 is pending at Pharmacy.",transaction
+2025-08-29,PaymentApp,"Bill payment of Rs 5,000 for Bus Booking successful.",transaction
+2025-08-29,UPI,Rs 349 spent using UPI at City Restaurant.,transaction
+2025-08-30,WhatsApp,Your friend Sam shared a photo with you.,non_transaction
+2025-08-30,Bank,Your account has been debited by Rs 250 for Pharmacy.,transaction
+2025-08-30,WhatsApp,Your friend Alex shared a photo with you.,non_transaction
+2025-08-30,Bank,"Your card was used for Rs 1,250 at Electricity Board.",transaction
+2025-08-31,Bank,"Your card was used for Rs 25,000 at Food Corner.",transaction
+2025-08-31,ShoppingApp,Special offer: save 30% on selected items today.,non_transaction
+2025-09-01,PaymentApp,"Bill payment of Rs 25,000 for Grocery Store successful.",transaction
+2025-09-01,ShoppingApp,Your order has been shipped.,non_transaction
+2025-09-01,UPI,"Your payment of Rs 2,500 is pending at Grocery Store.",transaction
+2025-09-02,Bank,Salary credit: Rs 120 received in your account.,transaction
+2025-09-02,PaymentApp,Bill payment of Rs 49 for City Restaurant successful.,transaction
+2025-09-02,Bank,Your account has been debited by Rs 120 for Coffee House.,transaction
+2025-09-02,Phone,You have a missed call from +91-9820990117.,non_transaction
+2025-09-03,Bank,Your OTP is 333746. Do not share it with anyone.,non_transaction
+2025-09-03,PaymentApp,"Bill payment of Rs 1,800 for Movie Tickets successful.",transaction
+2025-09-03,Bank,Your card was used for Rs 49 at Food Corner.,transaction
+2025-09-03,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-09-04,PaymentApp,"Payment of Rs 25,000 at Metro Store is complete.",transaction
+2025-09-04,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-09-05,UPI,Your payment of Rs 500 is pending at Pharmacy.,transaction
+2025-09-05,PaymentApp,Rs 199 has been refunded by Coffee House.,transaction
+2025-09-05,Bank,Your password was changed successfully.,non_transaction
+2025-09-06,WhatsApp,You have a new WhatsApp message from Kiran.,non_transaction
+2025-09-06,Bank,Your password was changed successfully.,non_transaction
+2025-09-06,Bank,Your bank statement is ready to download.,non_transaction
+2025-09-07,Instagram,New posts from accounts you follow.,non_transaction
+2025-09-07,Bank,Your account security settings were updated.,non_transaction
+2025-09-07,UPI,Your account received Rs 250 via UPI from Friend.,transaction
+2025-09-07,Phone,You have a missed call from +91-9688202182.,non_transaction
+2025-09-08,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-09-08,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-09-08,Bank,Your bank statement is ready to download.,non_transaction
+2025-09-09,Bank,Your OTP is 711116. Do not share it with anyone.,non_transaction
+2025-09-09,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-09-09,Bank,Rs 49 debited from account ending 1234. Ref: TX126499.,transaction
+2025-09-10,UPI,Rs 500 spent using UPI at Book Shop.,transaction
+2025-09-10,Bank,IMPS transfer of Rs 799 to Metro Store completed.,transaction
+2025-09-10,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-09-10,Bank,Salary credit: Rs 199 received in your account.,transaction
+2025-09-11,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-09-11,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-09-11,PaymentApp,Rs 75 has been refunded by Fresh Mart.,transaction
+2025-09-12,WhatsApp,Your friend Sam shared a photo with you.,non_transaction
+2025-09-12,Bank,Your password was changed successfully.,non_transaction
+2025-09-12,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-09-13,PaymentApp,Payment of Rs 199 at Online Market is complete.,transaction
+2025-09-13,Bank,NEFT credit of Rs 250 received from Friend.,transaction
+2025-09-14,Bank,Salary credit: Rs 250 received in your account.,transaction
+2025-09-14,Instagram,New posts from accounts you follow.,non_transaction
+2025-09-14,UPI,UPI transaction of Rs 120 to Coffee House failed.,transaction
+2025-09-15,Phone,You have a missed call from +91-9271122762.,non_transaction
+2025-09-15,UPI,Your payment of Rs 120 is pending at Food Corner.,transaction
+2025-09-15,ShoppingApp,Your order has been shipped.,non_transaction
+2025-09-16,WhatsApp,You have a new WhatsApp message from Alex.,non_transaction
+2025-09-16,Bank,Your card was used for Rs 75 at Bus Booking.,transaction
+2025-09-16,Instagram,Priya mentioned you in a comment.,non_transaction
+2025-09-16,UPI,"UPI transaction of Rs 12,000 to Pharmacy failed.",transaction
+2025-09-17,UPI,UPI payment of Rs 199 to Metro Store successful.,transaction
+2025-09-17,UPI,UPI payment of Rs 500 to Bus Booking successful.,transaction
+2025-09-17,Bank,Rs 199 debited from account ending 1234. Ref: TX969005.,transaction
+2025-09-18,Instagram,You have a new Instagram follower.,non_transaction
+2025-09-18,PaymentApp,Rs 75 has been refunded by City Restaurant.,transaction
+2025-09-18,Bank,NEFT credit of Rs 120 received from Sample Sender.,transaction
+2025-09-18,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-09-19,UPI,Your payment of Rs 199 is pending at Electricity Board.,transaction
+2025-09-19,Instagram,You have a new Instagram follower.,non_transaction
+2025-09-19,Bank,Your OTP is 403915. Do not share it with anyone.,non_transaction
+2025-09-19,Instagram,New posts from accounts you follow.,non_transaction
+2025-09-20,Bank,"Your account has been debited by Rs 25,000 for Metro Store.",transaction
+2025-09-20,UPI,"Your payment of Rs 1,000 is pending at Bus Booking.",transaction
+2025-09-20,Bank,Your OTP is 682032. Do not share it with anyone.,non_transaction
+2025-09-20,Bank,"Your account has been debited by Rs 2,500 for Electricity Board.",transaction
+2025-09-21,UPI,UPI transaction of Rs 500 to Online Market failed.,transaction
+2025-09-21,PaymentApp,Payment of Rs 349 at Fuel Station is complete.,transaction
+2025-09-21,Bank,INR 349 credited to your account from Sample Sender.,transaction
+2025-09-22,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-09-22,UPI,UPI payment of Rs 799 to City Restaurant successful.,transaction
+2025-09-23,Bank,Your OTP is 787313. Do not share it with anyone.,non_transaction
+2025-09-23,UPI,UPI payment of Rs 500 to Food Corner successful.,transaction
+2025-09-23,Bank,IMPS transfer of Rs 250 to Mobile Store completed.,transaction
+2025-09-23,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-09-24,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-09-24,ShoppingApp,Your order has been shipped.,non_transaction
+2025-09-24,StreamingApp,Your subscription renews next week.,non_transaction
+2025-09-25,ShoppingApp,Special offer: save 15% on selected items today.,non_transaction
+2025-09-25,Instagram,You have a new Instagram follower.,non_transaction
+2025-09-26,Bank,Your password was changed successfully.,non_transaction
+2025-09-26,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-09-27,Bank,"Your card was used for Rs 1,000 at Metro Store.",transaction
+2025-09-27,UPI,"Your payment of Rs 1,800 is pending at Electricity Board.",transaction
+2025-09-27,PaymentApp,Payment of Rs 250 at Pharmacy is complete.,transaction
+2025-09-28,StreamingApp,Your subscription renews next week.,non_transaction
+2025-09-28,UPI,UPI payment of Rs 799 to Food Corner successful.,transaction
+2025-09-28,Phone,You have a missed call from +91-9588169687.,non_transaction
+2025-09-29,PaymentApp,Rs 199 has been refunded by Movie Tickets.,transaction
+2025-09-29,YouTube,New videos are waiting for you.,non_transaction
+2025-09-30,Bank,Your OTP is 976052. Do not share it with anyone.,non_transaction
+2025-09-30,UPI,Your payment of Rs 650 is pending at Electricity Board.,transaction
+2025-09-30,Bank,Your OTP is 605529. Do not share it with anyone.,non_transaction
+2025-09-30,UPI,"Your account received Rs 12,000 via UPI from Ravi.",transaction
+2025-10-01,PaymentApp,Payment of Rs 349 at Food Corner is complete.,transaction
+2025-10-01,Bank,Your account security settings were updated.,non_transaction
+2025-10-01,PaymentApp,"Bill payment of Rs 25,000 for Fuel Station successful.",transaction
+2025-10-02,UPI,Rs 250 spent using UPI at Mobile Store.,transaction
+2025-10-02,UPI,Rs 250 spent using UPI at Fresh Mart.,transaction
+2025-10-02,Phone,You have a missed call from +91-9784642175.,non_transaction
+2025-10-02,Bank,IMPS transfer of Rs 120 to Fuel Station completed.,transaction
+2025-10-03,Bank,Your bank statement is ready to download.,non_transaction
+2025-10-03,PaymentApp,Payment of Rs 799 at Metro Store is complete.,transaction
+2025-10-03,Bank,Salary credit: Rs 120 received in your account.,transaction
+2025-10-03,Bank,Your account has been debited by Rs 500 for Electricity Board.,transaction
+2025-10-04,Instagram,New posts from accounts you follow.,non_transaction
+2025-10-04,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-10-04,UPI,Your account received Rs 49 via UPI from Sample Sender.,transaction
+2025-10-04,Phone,You have a missed call from +91-9849088260.,non_transaction
+2025-10-05,PaymentApp,"Bill payment of Rs 2,500 for Food Corner successful.",transaction
+2025-10-05,Bank,Your password was changed successfully.,non_transaction
+2025-10-05,Bank,Your card was used for Rs 120 at Book Shop.,transaction
+2025-10-05,Bank,Rs 49 withdrawn from your account at ATM.,transaction
+2025-10-06,Bank,INR 49 credited to your account from Customer.,transaction
+2025-10-06,ShoppingApp,Your order has been shipped.,non_transaction
+2025-10-07,YouTube,New videos are waiting for you.,non_transaction
+2025-10-07,Bank,"NEFT credit of Rs 2,500 received from Ravi.",transaction
+2025-10-07,PaymentApp,Bill payment of Rs 349 for Food Corner successful.,transaction
+2025-10-07,Bank,"IMPS transfer of Rs 1,800 to Coffee House completed.",transaction
+2025-10-08,Instagram,A friend mentioned you in a comment.,non_transaction
+2025-10-08,Bank,Your bank statement is ready to download.,non_transaction
+2025-10-08,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-10-09,Bank,Your account has been debited by Rs 120 for Grocery Store.,transaction
+2025-10-09,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-10-10,UPI,"Rs 2,500 spent using UPI at Internet Provider.",transaction
+2025-10-10,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-10-10,StreamingApp,Your subscription renews next week.,non_transaction
+2025-10-11,Bank,Your card was used for Rs 349 at Bus Booking.,transaction
+2025-10-11,Bank,Your account has been debited by Rs 349 for City Restaurant.,transaction
+2025-10-11,UPI,"Your payment of Rs 2,500 is pending at Mobile Store.",transaction
+2025-10-12,Instagram,You have a new Instagram follower.,non_transaction
+2025-10-12,Bank,Your password was changed successfully.,non_transaction
+2025-10-13,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-10-13,Bank,Rs 199 debited from account ending 1234. Ref: TX627611.,transaction
+2025-10-13,Bank,INR 799 credited to your account from Friend.,transaction
+2025-10-14,Bank,Your monthly account summary is available.,non_transaction
+2025-10-14,WhatsApp,Your friend A friend shared a photo with you.,non_transaction
+2025-10-14,Bank,NEFT credit of Rs 120 received from Customer.,transaction
+2025-10-15,Bank,Your account security settings were updated.,non_transaction
+2025-10-15,Bank,NEFT credit of Rs 650 received from A Kumar.,transaction
+2025-10-15,ShoppingApp,Your order has been shipped.,non_transaction
+2025-10-16,Bank,NEFT credit of Rs 349 received from Customer.,transaction
+2025-10-16,Bank,Rs 650 withdrawn from your account at ATM.,transaction
+2025-10-16,Bank,Rs 650 withdrawn from your account at ATM.,transaction
+2025-10-17,Instagram,Alex mentioned you in a comment.,non_transaction
+2025-10-17,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-10-17,StreamingApp,Your subscription renews next week.,non_transaction
+2025-10-18,Phone,You have a missed call from +91-9905488247.,non_transaction
+2025-10-18,UPI,"Rs 5,000 spent using UPI at Pharmacy.",transaction
+2025-10-18,UPI,Your payment of Rs 349 is pending at Pharmacy.,transaction
+2025-10-19,Bank,Your account has been debited by Rs 49 for Bus Booking.,transaction
+2025-10-19,ShoppingApp,Your order has been shipped.,non_transaction
+2025-10-19,Bank,Your card was used for Rs 799 at Pharmacy.,transaction
+2025-10-19,PaymentApp,"Bill payment of Rs 5,000 for Fuel Station successful.",transaction
+2025-10-20,UPI,Your payment of Rs 799 is pending at Pharmacy.,transaction
+2025-10-20,Bank,Your card was used for Rs 199 at Movie Tickets.,transaction
+2025-10-20,Bank,"Rs 2,500 debited from account ending 1234. Ref: TX938900.",transaction
+2025-10-21,Bank,Your account has been debited by Rs 349 for Online Market.,transaction
+2025-10-21,Phone,You have a missed call from +91-9943244821.,non_transaction
+2025-10-21,Bank,NEFT credit of Rs 75 received from A Kumar.,transaction
+2025-10-22,Bank,"NEFT credit of Rs 25,000 received from Customer.",transaction
+2025-10-22,PaymentApp,Rs 799 has been refunded by Food Corner.,transaction
+2025-10-22,Bank,"NEFT credit of Rs 1,800 received from Employer.",transaction
+2025-10-23,Instagram,New posts from accounts you follow.,non_transaction
+2025-10-23,Bank,Your bank statement is ready to download.,non_transaction
+2025-10-23,Bank,Salary credit: Rs 120 received in your account.,transaction
+2025-10-24,ShoppingApp,Special offer: save 40% on selected items today.,non_transaction
+2025-10-24,UPI,Your payment of Rs 120 is pending at City Restaurant.,transaction
+2025-10-24,PaymentApp,"Rs 1,000 has been refunded by Movie Tickets.",transaction
+2025-10-24,YouTube,New videos are waiting for you.,non_transaction
+2025-10-25,PaymentApp,Payment of Rs 49 at Metro Store is complete.,transaction
+2025-10-25,Instagram,You have a new Instagram follower.,non_transaction
+2025-10-25,PaymentApp,Bill payment of Rs 75 for Fresh Mart successful.,transaction
+2025-10-25,UPI,UPI payment of Rs 199 to Book Shop successful.,transaction
+2025-10-26,Bank,Your monthly account summary is available.,non_transaction
+2025-10-26,UPI,Your account received Rs 250 via UPI from Sample Sender.,transaction
+2025-10-27,UPI,"UPI transaction of Rs 1,250 to Grocery Store failed.",transaction
+2025-10-27,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-10-28,WhatsApp,Your friend A friend shared a photo with you.,non_transaction
+2025-10-28,Bank,"IMPS transfer of Rs 1,800 to Pharmacy completed.",transaction
+2025-10-28,WhatsApp,Your friend Ravi shared a photo with you.,non_transaction
+2025-10-29,Bank,Your account has been debited by Rs 250 for Food Corner.,transaction
+2025-10-29,PaymentApp,"Bill payment of Rs 25,000 for Book Shop successful.",transaction
+2025-10-29,Bank,IMPS transfer of Rs 650 to Coffee House completed.,transaction
+2025-10-30,Bank,"Rs 2,500 debited from account ending 1234. Ref: TX849666.",transaction
+2025-10-30,Bank,Your monthly account summary is available.,non_transaction
+2025-10-30,Bank,Your card was used for Rs 799 at Book Shop.,transaction
+2025-10-31,UPI,UPI payment of Rs 349 to Metro Store successful.,transaction
+2025-10-31,Instagram,New posts from accounts you follow.,non_transaction
+2025-10-31,PaymentApp,Rs 49 has been refunded by Metro Store.,transaction
+2025-11-01,Bank,"INR 1,000 credited to your account from Ravi.",transaction
+2025-11-01,Bank,Your account has been debited by Rs 650 for City Restaurant.,transaction
+2025-11-02,Bank,"Rs 1,000 debited from account ending 1234. Ref: TX622605.",transaction
+2025-11-02,WhatsApp,Your friend A friend shared a photo with you.,non_transaction
+2025-11-02,UPI,Your account received Rs 75 via UPI from Sample Sender.,transaction
+2025-11-02,PaymentApp,Bill payment of Rs 349 for Fuel Station successful.,transaction
+2025-11-03,Instagram,A friend mentioned you in a comment.,non_transaction
+2025-11-03,Bank,Your account security settings were updated.,non_transaction
+2025-11-03,Instagram,Kiran mentioned you in a comment.,non_transaction
+2025-11-03,Bank,"IMPS transfer of Rs 1,250 to Metro Store completed.",transaction
+2025-11-04,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-11-04,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-11-05,Bank,"Rs 1,250 debited from account ending 1234. Ref: TX932978.",transaction
+2025-11-05,Bank,"INR 2,500 credited to your account from Ravi.",transaction
+2025-11-06,StreamingApp,Your subscription renews next week.,non_transaction
+2025-11-06,Bank,Your account security settings were updated.,non_transaction
+2025-11-07,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-11-07,Instagram,Sam mentioned you in a comment.,non_transaction
+2025-11-07,Bank,Your OTP is 302338. Do not share it with anyone.,non_transaction
+2025-11-08,UPI,Your account received Rs 799 via UPI from A Kumar.,transaction
+2025-11-08,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-11-08,PaymentApp,"Payment of Rs 1,800 at Food Corner is complete.",transaction
+2025-11-08,PaymentApp,Payment of Rs 120 at Electricity Board is complete.,transaction
+2025-11-09,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-11-09,Bank,Your monthly account summary is available.,non_transaction
+2025-11-09,Instagram,New posts from accounts you follow.,non_transaction
+2025-11-10,PaymentApp,Bill payment of Rs 250 for Mobile Store successful.,transaction
+2025-11-10,PaymentApp,Rs 199 has been refunded by City Restaurant.,transaction
+2025-11-10,UPI,Your account received Rs 349 via UPI from A Kumar.,transaction
+2025-11-10,Bank,Rs 199 withdrawn from your account at ATM.,transaction
+2025-11-11,Phone,You have a missed call from +91-9374811907.,non_transaction
+2025-11-11,Bank,Your card was used for Rs 120 at Fresh Mart.,transaction
+2025-11-11,UPI,"UPI payment of Rs 12,000 to Coffee House successful.",transaction
+2025-11-11,Bank,"Rs 1,800 debited from account ending 1234. Ref: TX161132.",transaction
+2025-11-12,UPI,"UPI payment of Rs 1,000 to City Restaurant successful.",transaction
+2025-11-12,Bank,"Your card was used for Rs 2,500 at Fuel Station.",transaction
+2025-11-12,Bank,Your password was changed successfully.,non_transaction
+2025-11-13,Bank,Your password was changed successfully.,non_transaction
+2025-11-13,Instagram,Sam mentioned you in a comment.,non_transaction
+2025-11-13,PaymentApp,Rs 349 has been refunded by Electricity Board.,transaction
+2025-11-13,ShoppingApp,Your order has been shipped.,non_transaction
+2025-11-14,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-11-14,Bank,"Rs 2,500 withdrawn from your account at ATM.",transaction
+2025-11-14,Bank,"Salary credit: Rs 12,000 received in your account.",transaction
+2025-11-14,Bank,IMPS transfer of Rs 49 to Electricity Board completed.,transaction
+2025-11-15,Bank,Your card was used for Rs 500 at Grocery Store.,transaction
+2025-11-15,YouTube,New videos are waiting for you.,non_transaction
+2025-11-16,Bank,"Salary credit: Rs 1,800 received in your account.",transaction
+2025-11-16,Bank,Your card was used for Rs 650 at Book Shop.,transaction
+2025-11-16,UPI,Your payment of Rs 500 is pending at Movie Tickets.,transaction
+2025-11-17,Bank,Your bank statement is ready to download.,non_transaction
+2025-11-17,Bank,"INR 1,000 credited to your account from Customer.",transaction
+2025-11-17,UPI,UPI payment of Rs 75 to Internet Provider successful.,transaction
+2025-11-18,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-11-18,Bank,"Your account has been debited by Rs 2,500 for Fresh Mart.",transaction
+2025-11-18,UPI,"Your account received Rs 1,250 via UPI from Customer.",transaction
+2025-11-19,UPI,"Your payment of Rs 12,000 is pending at Coffee House.",transaction
+2025-11-19,Bank,"Your card was used for Rs 5,000 at Book Shop.",transaction
+2025-11-19,PaymentApp,Rs 120 has been refunded by Pharmacy.,transaction
+2025-11-20,Bank,NEFT credit of Rs 120 received from Friend.,transaction
+2025-11-20,ShoppingApp,Special offer: save 25% on selected items today.,non_transaction
+2025-11-21,Bank,Rs 650 withdrawn from your account at ATM.,transaction
+2025-11-21,ShoppingApp,Your order has been shipped.,non_transaction
+2025-11-21,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-11-21,Bank,"Your account has been debited by Rs 1,000 for Metro Store.",transaction
+2025-11-22,WhatsApp,Your friend Alex shared a photo with you.,non_transaction
+2025-11-22,ShoppingApp,Special offer: save 50% on selected items today.,non_transaction
+2025-11-22,Bank,Your account security settings were updated.,non_transaction
+2025-11-22,PaymentApp,Rs 199 has been refunded by Book Shop.,transaction
+2025-11-23,Bank,Rs 500 withdrawn from your account at ATM.,transaction
+2025-11-23,PaymentApp,Bill payment of Rs 250 for Movie Tickets successful.,transaction
+2025-11-24,UPI,Rs 799 spent using UPI at Metro Store.,transaction
+2025-11-24,Bank,NEFT credit of Rs 75 received from Customer.,transaction
+2025-11-25,Bank,"NEFT credit of Rs 1,800 received from A Kumar.",transaction
+2025-11-25,UPI,Your payment of Rs 650 is pending at Online Market.,transaction
+2025-11-26,StreamingApp,Your subscription renews next week.,non_transaction
+2025-11-26,Bank,Salary credit: Rs 49 received in your account.,transaction
+2025-11-27,UPI,Your payment of Rs 349 is pending at Fresh Mart.,transaction
+2025-11-27,Bank,IMPS transfer of Rs 650 to Electricity Board completed.,transaction
+2025-11-27,Bank,"NEFT credit of Rs 2,500 received from Sample Sender.",transaction
+2025-11-28,PaymentApp,"Rs 2,500 has been refunded by Bus Booking.",transaction
+2025-11-28,Phone,You have a missed call from +91-9837148793.,non_transaction
+2025-11-28,Bank,Your card was used for Rs 250 at Online Market.,transaction
+2025-11-29,UPI,Your account received Rs 500 via UPI from Ravi.,transaction
+2025-11-29,Bank,Rs 250 withdrawn from your account at ATM.,transaction
+2025-11-29,ShoppingApp,Special offer: save 50% on selected items today.,non_transaction
+2025-11-30,Bank,INR 349 credited to your account from Sample Sender.,transaction
+2025-11-30,ShoppingApp,Your order has been shipped.,non_transaction
+2025-11-30,YouTube,New videos are waiting for you.,non_transaction
+2025-12-01,Bank,NEFT credit of Rs 650 received from Ravi.,transaction
+2025-12-01,Bank,Your OTP is 917707. Do not share it with anyone.,non_transaction
+2025-12-01,PaymentApp,"Bill payment of Rs 1,800 for Metro Store successful.",transaction
+2025-12-02,PaymentApp,Payment of Rs 500 at Fuel Station is complete.,transaction
+2025-12-02,WhatsApp,You have a new WhatsApp message from Ravi.,non_transaction
+2025-12-02,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-12-02,StreamingApp,Your subscription renews next week.,non_transaction
+2025-12-03,UPI,"Rs 2,500 spent using UPI at Movie Tickets.",transaction
+2025-12-03,Bank,Your password was changed successfully.,non_transaction
+2025-12-03,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-12-03,Instagram,Someone liked your Instagram photo.,non_transaction
+2025-12-04,UPI,Rs 500 spent using UPI at Book Shop.,transaction
+2025-12-04,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-12-05,ShoppingApp,Special offer: save 50% on selected items today.,non_transaction
+2025-12-05,Bank,INR 349 credited to your account from Friend.,transaction
+2025-12-06,PaymentApp,"Rs 12,000 has been refunded by Fresh Mart.",transaction
+2025-12-06,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-12-06,Bank,Your bank statement is ready to download.,non_transaction
+2025-12-07,Bank,Your OTP is 841635. Do not share it with anyone.,non_transaction
+2025-12-07,Phone,You have a missed call from +91-9690929397.,non_transaction
+2025-12-08,PaymentApp,"Payment of Rs 1,250 at Mobile Store is complete.",transaction
+2025-12-08,Bank,Your bank statement is ready to download.,non_transaction
+2025-12-08,Bank,"IMPS transfer of Rs 1,000 to Movie Tickets completed.",transaction
+2025-12-08,PaymentApp,Payment of Rs 199 at Internet Provider is complete.,transaction
+2025-12-09,YouTube,New videos are waiting for you.,non_transaction
+2025-12-09,Bank,"Your account has been debited by Rs 25,000 for Fuel Station.",transaction
+2025-12-10,Bank,Salary credit: Rs 120 received in your account.,transaction
+2025-12-10,Bank,NEFT credit of Rs 500 received from Ravi.,transaction
+2025-12-10,UPI,UPI transaction of Rs 75 to Metro Store failed.,transaction
+2025-12-10,Instagram,New posts from accounts you follow.,non_transaction
+2025-12-11,PaymentApp,Payment of Rs 349 at Bus Booking is complete.,transaction
+2025-12-11,Instagram,New posts from accounts you follow.,non_transaction
+2025-12-12,Bank,Your OTP is 905843. Do not share it with anyone.,non_transaction
+2025-12-12,UPI,Your payment of Rs 120 is pending at Coffee House.,transaction
+2025-12-12,Bank,"IMPS transfer of Rs 25,000 to Metro Store completed.",transaction
+2025-12-12,ShoppingApp,Your order has been shipped.,non_transaction
+2025-12-13,Instagram,Kiran mentioned you in a comment.,non_transaction
+2025-12-13,StreamingApp,Your subscription renews next week.,non_transaction
+2025-12-13,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-12-14,UPI,UPI transaction of Rs 250 to Mobile Store failed.,transaction
+2025-12-14,PaymentApp,"Bill payment of Rs 25,000 for Coffee House successful.",transaction
+2025-12-14,Bank,IMPS transfer of Rs 500 to Fresh Mart completed.,transaction
+2025-12-15,Instagram,A friend mentioned you in a comment.,non_transaction
+2025-12-15,ShoppingApp,Festival sale starts today. Shop now!,non_transaction
+2025-12-15,Bank,Rs 49 withdrawn from your account at ATM.,transaction
+2025-12-15,UPI,"UPI payment of Rs 1,000 to Book Shop successful.",transaction
+2025-12-16,Instagram,A friend mentioned you in a comment.,non_transaction
+2025-12-16,Instagram,New posts from accounts you follow.,non_transaction
+2025-12-16,PaymentApp,"Rs 25,000 has been refunded by Internet Provider.",transaction
+2025-12-17,StreamingApp,Your subscription renews next week.,non_transaction
+2025-12-17,WhatsApp,Your friend Priya shared a photo with you.,non_transaction
+2025-12-18,PaymentApp,Rs 49 has been refunded by Fuel Station.,transaction
+2025-12-18,UPI,UPI transaction of Rs 120 to Metro Store failed.,transaction
+2025-12-18,UPI,Your payment of Rs 349 is pending at Mobile Store.,transaction
+2025-12-19,ShoppingApp,Your delivery is out for delivery.,non_transaction
+2025-12-19,Bank,Rs 120 debited from account ending 1234. Ref: TX489633.,transaction
+2025-12-19,Bank,IMPS transfer of Rs 500 to Electricity Board completed.,transaction
+2025-12-20,UPI,Rs 500 spent using UPI at Internet Provider.,transaction
+2025-12-20,PaymentApp,Bill payment of Rs 250 for Fuel Station successful.,transaction
+2025-12-21,ShoppingApp,Special offer: save 50% on selected items today.,non_transaction
+2025-12-21,Bank,Reminder: your bill is due tomorrow.,non_transaction
+2025-12-21,Phone,You have a missed call from +91-9147276808.,non_transaction
+2025-12-22,UPI,Rs 199 spent using UPI at Electricity Board.,transaction
+2025-12-22,WhatsApp,You have a new WhatsApp message from Kiran.,non_transaction
+2025-12-23,Bank,"Rs 1,000 withdrawn from your account at ATM.",transaction
+2025-12-23,Instagram,Ravi mentioned you in a comment.,non_transaction
+2025-12-23,Bank,INR 500 credited to your account from Family Account.,transaction
+2025-12-24,Bank,IMPS transfer of Rs 650 to Metro Store completed.,transaction
+2025-12-24,ShoppingApp,Your order has been shipped.,non_transaction
+2025-12-24,UPI,Rs 199 spent using UPI at Online Market.,transaction
+2025-12-25,Bank,"Salary credit: Rs 1,800 received in your account.",transaction
+2025-12-25,UPI,"UPI payment of Rs 12,000 to Mobile Store successful.",transaction
+2025-12-25,WhatsApp,Your friend Alex shared a photo with you.,non_transaction
+2025-12-25,WhatsApp,Your friend Priya shared a photo with you.,non_transaction
+2025-12-26,Bank,Your monthly account summary is available.,non_transaction
+2025-12-26,ShoppingApp,Your order has been shipped.,non_transaction
+2025-12-26,UPI,"UPI transaction of Rs 25,000 to Pharmacy failed.",transaction
+2025-12-27,Instagram,New posts from accounts you follow.,non_transaction
+2025-12-27,Bank,"INR 1,250 credited to your account from Customer.",transaction
+2025-12-27,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-12-28,Weather,Weather alert: rain expected this evening.,non_transaction
+2025-12-28,Bank,"Rs 5,000 debited from account ending 1234. Ref: TX458823.",transaction
+2025-12-28,Bank,Your card was used for Rs 349 at Bus Booking.,transaction
+2025-12-29,Bank,"Salary credit: Rs 1,250 received in your account.",transaction
+2025-12-29,Bank,"IMPS transfer of Rs 2,500 to City Restaurant completed.",transaction
+2025-12-29,Instagram,New posts from accounts you follow.,non_transaction
+2025-12-29,Instagram,You have a new Instagram follower.,non_transaction
+2025-12-30,ShoppingApp,Special offer: save 30% on selected items today.,non_transaction
+2025-12-30,WhatsApp,Your friend Sam shared a photo with you.,non_transaction
+2025-12-31,Bank,"IMPS transfer of Rs 5,000 to Movie Tickets completed.",transaction
+2025-12-31,Instagram,New posts from accounts you follow.,non_transaction
+2025-12-31,Instagram,Someone liked your Instagram photo.,non_transaction
