@@ -1,17 +1,40 @@
-# untitled
+# Finova – Personal Finance Management App
 
-A new Flutter project.
+**Your Money. Your Future.**
 
-## Getting Started
+Finova is a personal finance management application designed to help users manage their money more effectively. It provides a convenient way to track transactions, organize budgets, set savings goals, and understand spending patterns in one place.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Dashboard:** View a summary of your financial activity.
+- **Transaction Management:** Record and track income and expenses.
+- **Budget Management:** Create and monitor budgets.
+- **Savings Goals:** Set financial goals and track your progress.
+- **Financial Insights:** Understand spending habits and financial trends.
+- **Reports:** Review financial activity through reports.
+- **Bill Management:** Organize and track bills.
+- **AI Financial Assistant:** Get assistance with financial questions.
+- **Secure Authentication:** Sign in and manage your account.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Project Objective
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The objective of Finova is to make personal financial management simpler, more organized, and accessible by bringing essential money-management features together in a single application.
+
+## Future Enhancements
+
+- Advanced financial analytics and personalized insights.
+- Automated transaction categorization.
+- Improved financial planning recommendations.
+- More detailed savings and budget reports.
+- Enhanced notification-based transaction tracking.
+
+## Project Information
+
+- **Project Name:** Finova
+- **Category:** Personal Finance Management
+- **Platform:** Mobile Application
+- **Framework:** Flutter
+
+---
+
+**Finova — Your Money. Your Future.**
