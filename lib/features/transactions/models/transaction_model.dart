@@ -1,4 +1,4 @@
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 enum TransactionType {
 income,
 expense,
@@ -64,25 +64,29 @@ return TransactionType.income;
 return TransactionType.expense;
 }
 
-static DateTime _parseDate(dynamic value) {
-if (value is DateTime) return value;
 
-if (value is String) {
-return DateTime.tryParse(value) ?? DateTime.now();
-}
+  static DateTime _parseDate(dynamic value) {
+    if (value is DateTime) {
+      return value;
+    }
 
-// Supports Firestore Timestamp.
-if (value != null) {
-try {
-final result = (value as dynamic).toDate();
-if (result is DateTime) return result;
-} catch (_) {
-// Use fallback for unsupported date values.
-}
-}
+    if (value is Timestamp) {
+      return value.toDate();
+    }
 
-return DateTime.now();
-}
+    if (value is String) {
+      final parsed = DateTime.tryParse(value);
+      if (parsed != null) {
+        return parsed;
+      }
+    }
+
+    // Do not silently convert invalid dates to the current time.
+    throw const FormatException(
+      'Transaction date is missing or has an unsupported format.',
+    );
+  }
+
 
 // Convert the model to JSON.
 Map<String, dynamic> toJson() {

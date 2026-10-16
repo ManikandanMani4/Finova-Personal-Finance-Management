@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +20,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   bool _editing = false;
   bool _saving = false;
+  bool _loading = true;
+  String? _loadError;
+
+
 
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
@@ -44,35 +47,54 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<void> _loadProfile() async {
-    final user = _auth.currentUser;
+    if (mounted) {
+      setState(() {
+        _loading = true;
+        _loadError = null;
+      });
+    }
 
-    if (user == null) return;
+    final user = _auth.currentUser;
+    if (user == null) {
+      if (!mounted) return;
+      setState(() {
+        _loading = false;
+        _loadError = 'Please sign in to view your profile.';
+        _profile = null;
+      });
+      return;
+    }
 
     try {
       final snapshot =
       await _firestore.collection('users').doc(user.uid).get();
-
       if (!mounted) return;
 
       final data = snapshot.data() ?? <String, dynamic>{};
-
       final profile = UserProfile.fromMap(user.uid, {
         ...data,
         'name': data['name'] ?? user.displayName ?? '',
         'email': data['email'] ?? user.email ?? '',
-        'phoneNumber': data['phoneNumber'] ?? user.phoneNumber ?? '',
+        'phoneNumber':
+        data['phoneNumber'] ?? data['phone'] ?? user.phoneNumber ?? '',
       });
 
       setState(() {
         _profile = profile;
         _nameController.text = profile.name;
         _phoneController.text = profile.phoneNumber;
-        _incomeController.text =
-            profile.monthlyIncome.toStringAsFixed(0);
+        _incomeController.text = profile.monthlyIncome.toStringAsFixed(0);
+        _loading = false;
+        _loadError = null;
       });
-    } catch (e) {
+    } catch (e, stackTrace) {
+      debugPrint('Profile loading error: $e');
+      debugPrintStack(stackTrace: stackTrace);
       if (!mounted) return;
-      _message('Unable to load your profile. Please try again.');
+      setState(() {
+        _loading = false;
+        _loadError = 'Unable to load your profile. Please try again.';
+      });
     }
   }
 
@@ -203,12 +225,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ],
       ),
       body: SafeArea(
-        child: profile == null
+        child: _loading
+            ? const Center(child: CircularProgressIndicator())
+            : _loadError != null
             ? Center(
-          child: _auth.currentUser == null
-              ? const Text('Please sign in to view your profile.')
-              : const CircularProgressIndicator(),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.person_off_outlined, size: 48),
+                const SizedBox(height: 12),
+                Text(_loadError!, textAlign: TextAlign.center),
+                const SizedBox(height: 12),
+                FilledButton(
+                  onPressed: _loadProfile,
+                  child: const Text('Try again'),
+                ),
+              ],
+            ),
+          ),
         )
+            : profile == null
+            ? const Center(child: Text('Profile unavailable.'))
             : RefreshIndicator(
           onRefresh: _loadProfile,
           child: ListView(

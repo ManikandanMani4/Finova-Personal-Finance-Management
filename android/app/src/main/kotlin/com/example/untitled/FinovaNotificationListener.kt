@@ -27,13 +27,14 @@ class FinovaNotificationListener : NotificationListenerService() {
             "com.truecaller"
         )
 
+        // Matches ₹1, ₹1,500.00, Rs. 250, and INR 100.
         private val amountRegex = Regex(
             """(?:₹\s*|rs\.?\s*|inr\s*)[0-9][0-9,]*(?:\.\d{1,2})?""",
             RegexOption.IGNORE_CASE
         )
 
         private val transactionRegex = Regex(
-            """\b(credited|debit|debited|sent|received|transfer|transferred|paid|payment|withdrawn|deposit)\b""",
+            """\b(credited|debit|debited|sent|received|transfer|transferred|paid|payment|withdrawn|deposit|deposited)\b""",
             RegexOption.IGNORE_CASE
         )
     }
@@ -49,12 +50,17 @@ class FinovaNotificationListener : NotificationListenerService() {
         val extras = sbn.notification.extras ?: return
 
         val title = extras.getCharSequence("android.title")
-            ?.toString()?.trim().orEmpty()
+            ?.toString()
+            ?.trim()
+            .orEmpty()
 
         val message = (
                 extras.getCharSequence("android.bigText")
                     ?: extras.getCharSequence("android.text")
-                )?.toString()?.trim().orEmpty()
+                )
+            ?.toString()
+            ?.trim()
+            .orEmpty()
 
         if (title.isBlank() && message.isBlank()) return
 
@@ -63,31 +69,29 @@ class FinovaNotificationListener : NotificationListenerService() {
         if (!amountRegex.containsMatchIn(combinedText)) return
         if (!transactionRegex.containsMatchIn(combinedText)) return
 
+        val notificationId = notificationIdFor(sbn)
         val prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE)
 
-        // Save before notifying Flutter, so the event survives a closed UI.
         synchronized(this) {
             val existing = try {
-                JSONArray(prefs.getString(KEY_TRANSACTIONS, "[]") ?: "[]")
-            } catch (_: Exception) {
+                JSONArray(
+                    prefs.getString(KEY_TRANSACTIONS, "[]") ?: "[]"
+                )
+            } catch (e: Exception) {
+                Log.e(TAG, "Could not read pending notifications", e)
                 JSONArray()
             }
 
-            // Avoid duplicate delivery of the same notification.
-            val notificationId =
-                "${sbn.packageName}:${sbn.key}:${sbn.postTime}"
-
-            var duplicate = false
+            // Avoid storing the same notification twice.
             for (i in 0 until existing.length()) {
-                if (existing.optJSONObject(i)
+                if (
+                    existing.optJSONObject(i)
                         ?.optString("notificationId") == notificationId
                 ) {
-                    duplicate = true
-                    break
+                    Log.d(TAG, "Duplicate notification ignored")
+                    return
                 }
             }
-
-            if (duplicate) return
 
             val item = JSONObject().apply {
                 put("notificationId", notificationId)
@@ -97,16 +101,18 @@ class FinovaNotificationListener : NotificationListenerService() {
                 put("timestamp", sbn.postTime)
             }
 
+            // Keep the newest MAX_PENDING notifications.
             val updated = JSONArray()
             val start = maxOf(0, existing.length() - MAX_PENDING + 1)
 
             for (i in start until existing.length()) {
-                updated.put(existing.getJSONObject(i))
+                val oldItem = existing.optJSONObject(i) ?: continue
+                updated.put(oldItem)
             }
 
             updated.put(item)
 
-            // commit() completes the local write before this callback returns.
+            // Persist locally before notifying Flutter.
             val saved = prefs.edit()
                 .putString(KEY_TRANSACTIONS, updated.toString())
                 .commit()
@@ -117,18 +123,24 @@ class FinovaNotificationListener : NotificationListenerService() {
             }
         }
 
-        Log.d(TAG, "Possible transaction saved locally")
+        Log.d(TAG, "Possible transaction saved locally: $notificationId")
 
-        notificationChannel?.invokeMethod(
-            "onNotification",
-            mapOf(
-                "notificationId" to notificationIdFor(sbn),
-                "packageName" to sbn.packageName,
-                "title" to title,
-                "message" to message,
-                "timestamp" to sbn.postTime
+        // Flutter may not be running. The local copy remains available
+        // for a later sync when the app opens.
+        try {
+            notificationChannel?.invokeMethod(
+                "onNotification",
+                mapOf(
+                    "notificationId" to notificationId,
+                    "packageName" to sbn.packageName,
+                    "title" to title,
+                    "message" to message,
+                    "timestamp" to sbn.postTime
+                )
             )
-        )
+        } catch (e: Exception) {
+            Log.e(TAG, "Could not notify Flutter", e)
+        }
     }
 
     private fun notificationIdFor(sbn: StatusBarNotification): String {
@@ -138,10 +150,14 @@ class FinovaNotificationListener : NotificationListenerService() {
     override fun onListenerDisconnected() {
         super.onListenerDisconnected()
         Log.d(TAG, "Notification listener disconnected")
+
         notificationChannel = null
 
         requestRebind(
-            ComponentName(this, FinovaNotificationListener::class.java)
+            ComponentName(
+                this,
+                FinovaNotificationListener::class.java
+            )
         )
     }
 }

@@ -2,6 +2,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../../../app/core/services/notification_service.dart';
 
 class DashboardScreen extends StatefulWidget {
   static const routeName = '/home';
@@ -14,44 +15,55 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> {
   bool _hideBalance = false;
+  bool _syncingNotifications = false;
 
   User? get _user => FirebaseAuth.instance.currentUser;
 
-  CollectionReference<Map<String, dynamic>> get _transactions {
-    return FirebaseFirestore.instance
-        .collection('users')
-        .doc(_user!.uid)
-        .collection('transactions');
+  CollectionReference<Map<String, dynamic>> get _transactions =>
+      FirebaseFirestore.instance
+          .collection('users')
+          .doc(_user!.uid)
+          .collection('transactions');
+
+  CollectionReference<Map<String, dynamic>> get _goals =>
+      FirebaseFirestore.instance
+          .collection('users')
+          .doc(_user!.uid)
+          .collection('savingsGoals');
+
+  @override
+  void initState() {
+    super.initState();
+    _syncNotifications();
   }
 
-  CollectionReference<Map<String, dynamic>> get _goals {
-    return FirebaseFirestore.instance
-        .collection('users')
-        .doc(_user!.uid)
-        .collection('savingsGoals');
+  Future<void> _syncNotifications() async {
+    if (_syncingNotifications) return;
+    _syncingNotifications = true;
+
+    try {
+      await NotificationService().syncPendingTransactions();
+    } catch (e) {
+      debugPrint('Finova notification sync failed: $e');
+    } finally {
+      _syncingNotifications = false;
+    }
   }
 
   String get _greeting {
     final hour = DateTime.now().hour;
-
     if (hour < 12) return 'Good morning';
     if (hour < 17) return 'Good afternoon';
     return 'Good evening';
   }
 
   String get _name {
-    final displayName = _user?.displayName?.trim();
-
-    if (displayName != null && displayName.isNotEmpty) {
-      return displayName.split(' ').first;
-    }
-
+    final name = _user?.displayName?.trim();
+    if (name != null && name.isNotEmpty) return name.split(' ').first;
     return _user?.email?.split('@').first ?? 'there';
   }
 
-  String _money(num value) {
-    return '₹${value.toStringAsFixed(2)}';
-  }
+  String _money(num value) => '₹${value.toStringAsFixed(2)}';
 
   double _amount(dynamic value) {
     if (value is num) return value.toDouble();
@@ -59,17 +71,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
   }
 
   bool _isIncome(Map<String, dynamic> data) {
-    final type = (data['type'] ?? '').toString().toLowerCase();
-    return type == 'credit' ||
-        type == 'income' ||
-        type == 'deposit';
+    final type = (data['type'] ?? '').toString().toLowerCase().trim();
+    return ['income', 'credit', 'credited', 'deposit', 'deposited']
+        .contains(type);
   }
 
   bool _isExpense(Map<String, dynamic> data) {
-    final type = (data['type'] ?? '').toString().toLowerCase();
-    return type == 'debit' ||
-        type == 'expense' ||
-        type == 'withdrawal';
+    final type = (data['type'] ?? '').toString().toLowerCase().trim();
+    return ['expense', 'debit', 'debited', 'withdrawal', 'withdrawn']
+        .contains(type);
   }
 
   @override
@@ -78,6 +88,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
     if (user == null) {
       return Scaffold(
+        backgroundColor: const Color(0xFFF4F8F6),
         body: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -87,13 +98,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
               const Text('Please sign in to view your dashboard.'),
               const SizedBox(height: 12),
               FilledButton(
-                onPressed: () {
-                  Navigator.pushNamedAndRemoveUntil(
-                    context,
-                    '/login',
-                        (_) => false,
-                  );
-                },
+                onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/login',
+                      (_) => false,
+                ),
                 child: const Text('Go to login'),
               ),
             ],
@@ -103,23 +112,30 @@ class _DashboardScreenState extends State<DashboardScreen> {
     }
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF5F7FC),
+      backgroundColor: const Color(0xFFF4F8F6),
       appBar: AppBar(
-        backgroundColor: const Color(0xFFF5F7FC),
+        backgroundColor: const Color(0xFFF4F8F6),
+        elevation: 0,
         title: const Text(
           'Finova',
           style: TextStyle(
-            color: Color(0xFF102A43),
+            color: Color(0xFF172923),
             fontWeight: FontWeight.bold,
             fontSize: 25,
           ),
         ),
         actions: [
           IconButton(
+            tooltip: 'Sync notifications',
+            onPressed: _syncNotifications,
+            icon: const Icon(
+              Icons.sync_rounded,
+              color: Color(0xFF123F35),
+            ),
+          ),
+          IconButton(
             tooltip: 'Profile',
-            onPressed: () {
-              Navigator.pushNamed(context, '/profile');
-            },
+            onPressed: () => Navigator.pushNamed(context, '/profile'),
             icon: const CircleAvatar(
               radius: 17,
               child: Icon(Icons.person_outline, size: 20),
@@ -136,8 +152,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
               .snapshots(),
           builder: (context, profileSnapshot) {
             final profile = profileSnapshot.data?.data() ?? {};
-            final profileName =
-            (profile['name'] ?? _name).toString();
+            final displayName =
+            (profile['name'] ?? _name).toString().trim();
+            final firstName =
+            displayName.isEmpty ? _name : displayName.split(' ').first;
 
             return StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
               stream: _transactions
@@ -168,18 +186,18 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   padding: const EdgeInsets.fromLTRB(20, 12, 20, 28),
                   children: [
                     Text(
-                      '$_greeting, ${profileName.split(' ').first} 👋',
+                      '$_greeting, $firstName 👋',
                       style: const TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF102A43),
+                        color: Color(0xFF172923),
                       ),
                     ),
                     const SizedBox(height: 6),
                     const Text(
                       'Here is your financial overview.',
                       style: TextStyle(
-                        color: Colors.blueGrey,
+                        color: Color(0xFF64786F),
                         fontSize: 14,
                       ),
                     ),
@@ -214,11 +232,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               IconButton(
-                                onPressed: () {
-                                  setState(() {
-                                    _hideBalance = !_hideBalance;
-                                  });
-                                },
+                                onPressed: () => setState(
+                                      () => _hideBalance = !_hideBalance,
+                                ),
                                 icon: Icon(
                                   _hideBalance
                                       ? Icons.visibility_off
@@ -264,8 +280,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
 
                     const SizedBox(height: 28),
-
-                    // Quick actions
                     _sectionTitle('Quick actions'),
                     const SizedBox(height: 14),
                     Row(
@@ -276,10 +290,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             label: 'Transactions',
                             color: const Color(0xFFE5EDFF),
                             iconColor: const Color(0xFF246BFD),
-                            onTap: () => Navigator.pushNamed(
-                              context,
-                              '/transactions',
-                            ),
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/transactions'),
                           ),
                         ),
                         const SizedBox(width: 10),
@@ -289,10 +301,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             label: 'Savings',
                             color: const Color(0xFFDDF7E9),
                             iconColor: const Color(0xFF16865C),
-                            onTap: () => Navigator.pushNamed(
-                              context,
-                              '/savings',
-                            ),
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/savings'),
                           ),
                         ),
                         const SizedBox(width: 10),
@@ -302,26 +312,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             label: 'Budgets',
                             color: const Color(0xFFFFEED9),
                             iconColor: const Color(0xFFAD6A00),
-                            onTap: () => Navigator.pushNamed(
-                              context,
-                              '/budgets',
-                            ),
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/budgets'),
                           ),
                         ),
                       ],
                     ),
 
                     const SizedBox(height: 28),
-
-                    // Savings goals
                     Row(
                       children: [
                         Expanded(child: _sectionTitle('Savings goals')),
                         TextButton(
-                          onPressed: () => Navigator.pushNamed(
-                            context,
-                            '/savings',
-                          ),
+                          onPressed: () =>
+                              Navigator.pushNamed(context, '/savings'),
                           child: const Text('View all'),
                         ),
                       ],
@@ -337,16 +341,22 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           );
                         }
 
+                        if (goalsSnapshot.connectionState ==
+                            ConnectionState.waiting &&
+                            !goalsSnapshot.hasData) {
+                          return const Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        }
+
                         final goals = goalsSnapshot.data?.docs ?? [];
 
                         if (goals.isEmpty) {
                           return _emptyCard(
                             'Your savings goals will appear here.',
                             action: 'Create a goal',
-                            onTap: () => Navigator.pushNamed(
-                              context,
-                              '/savings',
-                            ),
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/savings'),
                           );
                         }
 
@@ -354,12 +364,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           children: goals.map((doc) {
                             final goal = doc.data();
                             final title =
-                            (goal['title'] ?? 'Savings goal')
-                                .toString();
-                            final target =
-                            _amount(goal['targetAmount']);
-                            final saved =
-                            _amount(goal['savedAmount']);
+                            (goal['title'] ?? 'Savings goal').toString();
+                            final target = _amount(goal['targetAmount']);
+                            final saved = _amount(goal['savedAmount']);
                             final progress = target > 0
                                 ? (saved / target).clamp(0.0, 1.0)
                                 : 0.0;
@@ -369,8 +376,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               padding: const EdgeInsets.all(16),
                               decoration: _cardDecoration(),
                               child: Column(
-                                crossAxisAlignment:
-                                CrossAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Row(
                                     children: [
@@ -383,6 +389,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                         child: Text(
                                           title,
                                           style: const TextStyle(
+                                            color: Color(0xFF172923),
                                             fontWeight: FontWeight.w600,
                                           ),
                                         ),
@@ -401,15 +408,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     value: progress,
                                     minHeight: 7,
                                     borderRadius: BorderRadius.circular(8),
-                                    backgroundColor:
-                                    const Color(0xFFE7ECEF),
+                                    backgroundColor: const Color(0xFFE7ECEF),
                                     color: const Color(0xFF16865C),
                                   ),
                                   const SizedBox(height: 10),
                                   Text(
                                     '${_money(saved)} saved of ${_money(target)}',
                                     style: const TextStyle(
-                                      color: Colors.blueGrey,
+                                      color: Color(0xFF64786F),
                                       fontSize: 12,
                                     ),
                                   ),
@@ -422,16 +428,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
 
                     const SizedBox(height: 20),
-
-                    // Recent transactions
                     Row(
                       children: [
                         Expanded(child: _sectionTitle('Recent activity')),
                         TextButton(
-                          onPressed: () => Navigator.pushNamed(
-                            context,
-                            '/transactions',
-                          ),
+                          onPressed: () =>
+                              Navigator.pushNamed(context, '/transactions'),
                           child: const Text('See all'),
                         ),
                       ],
@@ -439,90 +441,101 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     const SizedBox(height: 8),
 
                     if (transactionSnapshot.hasError)
-                      _emptyCard('Unable to load transactions.')
-                    else if (transactions.isEmpty)
                       _emptyCard(
-                        'Your transactions will appear here when available.',
-                        action: 'View transactions',
-                        onTap: () => Navigator.pushNamed(
-                          context,
-                          '/transactions',
-                        ),
+                        'Unable to load transactions. Check your connection and Firestore rules.',
                       )
-                    else
-                      ...transactions.take(5).map((doc) {
-                        final data = doc.data();
-                        final isIncome = _isIncome(data);
-                        final amount = _amount(data['amount']);
-                        final title = (data['title'] ??
-                            data['payee'] ??
-                            data['merchant'] ??
-                            data['category'] ??
-                            'Transaction')
-                            .toString();
+                    else if (transactionSnapshot.connectionState ==
+                        ConnectionState.waiting &&
+                        !transactionSnapshot.hasData)
+                      const Center(child: CircularProgressIndicator())
+                    else if (transactions.isEmpty)
+                        _emptyCard(
+                          'Your transactions will appear here when available.',
+                          action: 'View transactions',
+                          onTap: () =>
+                              Navigator.pushNamed(context, '/transactions'),
+                        )
+                      else
+                        ...transactions.take(5).map((doc) {
+                          final data = doc.data();
+                          final isIncome = _isIncome(data);
+                          final amount = _amount(data['amount']);
+                          final title = (data['title'] ??
+                              data['payee'] ??
+                              data['merchant'] ??
+                              data['category'] ??
+                              'Transaction')
+                              .toString();
 
-                        return Container(
-                          margin: const EdgeInsets.only(bottom: 10),
-                          padding: const EdgeInsets.all(14),
-                          decoration: _cardDecoration(),
-                          child: Row(
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: isIncome
-                                    ? const Color(0xFFDDF7E9)
-                                    : const Color(0xFFFFE6E6),
-                                child: Icon(
-                                  isIncome
-                                      ? Icons.arrow_downward
-                                      : Icons.arrow_upward,
-                                  color: isIncome
-                                      ? const Color(0xFF16865C)
-                                      : Colors.redAccent,
+                          return Container(
+                            margin: const EdgeInsets.only(bottom: 10),
+                            padding: const EdgeInsets.all(14),
+                            decoration: _cardDecoration(),
+                            child: Row(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: isIncome
+                                      ? const Color(0xFFDDF7E9)
+                                      : const Color(0xFFFFE6E6),
+                                  child: Icon(
+                                    isIncome
+                                        ? Icons.arrow_downward
+                                        : Icons.arrow_upward,
+                                    color: isIncome
+                                        ? const Color(0xFF16865C)
+                                        : Colors.redAccent,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment:
-                                  CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      title,
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: const TextStyle(
-                                        fontWeight: FontWeight.w600,
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        title,
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(
+                                          color: Color(0xFF172923),
+                                          fontWeight: FontWeight.w600,
+                                        ),
                                       ),
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      (data['category'] ?? 'General')
-                                          .toString(),
-                                      style: const TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.blueGrey,
+                                      const SizedBox(height: 4),
+                                      Text(
+                                        (data['category'] ?? 'General')
+                                            .toString(),
+                                        style: const TextStyle(
+                                          fontSize: 12,
+                                          color: Color(0xFF64786F),
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                      if (data['verificationStatus'] ==
+                                          'needs_review')
+                                        const Text(
+                                          'Imported — please verify',
+                                          style: TextStyle(
+                                            fontSize: 11,
+                                            color: Color(0xFFAD6A00),
+                                          ),
+                                        ),
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                '${isIncome ? '+' : '-'}${_money(amount)}',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: isIncome
-                                      ? const Color(0xFF16865C)
-                                      : const Color(0xFFB3261E),
+                                Text(
+                                  '${isIncome ? '+' : '-'}${_money(amount)}',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: isIncome
+                                        ? const Color(0xFF16865C)
+                                        : const Color(0xFFB3261E),
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        );
-                      }),
+                              ],
+                            ),
+                          );
+                        }),
 
                     const SizedBox(height: 24),
-
-                    // Financial insights
                     Container(
                       padding: const EdgeInsets.all(18),
                       decoration: BoxDecoration(
@@ -557,10 +570,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             ),
                           ),
                           IconButton(
-                            onPressed: () => Navigator.pushNamed(
-                              context,
-                              '/insights',
-                            ),
+                            onPressed: () =>
+                                Navigator.pushNamed(context, '/insights'),
                             icon: const Icon(Icons.arrow_forward),
                           ),
                         ],
@@ -628,7 +639,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       style: const TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.bold,
-        color: Color(0xFF102A43),
+        color: Color(0xFF172923),
       ),
     );
   }
@@ -667,6 +678,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 label,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
+                  color: Color(0xFF172923),
                   fontWeight: FontWeight.w600,
                   fontSize: 12,
                 ),
@@ -691,14 +703,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
         children: [
           const Icon(
             Icons.inbox_outlined,
-            color: Colors.blueGrey,
+            color: Color(0xFF64786F),
             size: 30,
           ),
           const SizedBox(height: 8),
           Text(
             message,
             textAlign: TextAlign.center,
-            style: const TextStyle(color: Colors.blueGrey),
+            style: const TextStyle(color: Color(0xFF64786F)),
           ),
           if (action != null && onTap != null) ...[
             const SizedBox(height: 8),
@@ -716,7 +728,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return BoxDecoration(
       color: Colors.white,
       borderRadius: BorderRadius.circular(18),
-      border: Border.all(color: const Color(0xFFEDF0F5)),
+      border: Border.all(color: const Color(0xFFDCE8E1)),
     );
   }
 }

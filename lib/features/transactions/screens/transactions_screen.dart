@@ -101,12 +101,11 @@ class _TransactionsScreenState extends State<TransactionsScreen> {
                     .snapshots(),
                 builder: (context, snapshot) {
                   if (snapshot.hasError) {
-                    return const Center(
+                    return Center(
                       child: Padding(
-                        padding: EdgeInsets.all(24),
+                        padding: const EdgeInsets.all(24),
                         child: Text(
-                          'Could not load transactions. Check your '
-                              'Firestore rules and transaction date fields.',
+                          'Firestore error: ${snapshot.error}',
                           textAlign: TextAlign.center,
                         ),
                       ),

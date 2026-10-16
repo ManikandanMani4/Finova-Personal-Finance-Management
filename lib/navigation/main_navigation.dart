@@ -14,12 +14,17 @@ class MainNavigation extends StatefulWidget {
   const MainNavigation({super.key});
 
   static const String routeName = '/main-navigation';
+
   @override
   State<MainNavigation> createState() => _MainNavigationState();
 }
 
 class _MainNavigationState extends State<MainNavigation> {
-  int _selectedIndex = 0;
+  // Actual screen index in IndexedStack.
+  int _screenIndex = 0;
+
+  // Selected item in the five-item bottom navigation.
+  int _navIndex = 0;
 
   final List<Widget> _screens = const [
     DashboardScreen(),
@@ -32,73 +37,103 @@ class _MainNavigationState extends State<MainNavigation> {
     ProfileScreen(),
   ];
 
+  void _openScreen(int screenIndex) {
+    setState(() {
+      _screenIndex = screenIndex;
 
+      // More remains selected for screens accessed through More.
+      if (screenIndex == 0) {
+        _navIndex = 0;
+      } else if (screenIndex == 1) {
+        _navIndex = 1;
+      } else if (screenIndex == 3) {
+        _navIndex = 2;
+      } else if (screenIndex == 4) {
+        _navIndex = 3;
+      } else {
+        _navIndex = 4;
+      }
+    });
+  }
+
+  void _showMoreMenu() {
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      builder: (sheetContext) {
+        return SafeArea(
+          child: ListView(
+            shrinkWrap: true,
+            children: [
+              ListTile(
+                leading: const Icon(Icons.pie_chart_outline),
+                title: const Text('Budgets'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  _openScreen(2);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.bar_chart),
+                title: const Text('Reports'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  _openScreen(5);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.receipt_long),
+                title: const Text('Bills'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  _openScreen(6);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.person_outline),
+                title: const Text('Profile'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  _openScreen(7);
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  void _onDestinationSelected(int index) {
+    switch (index) {
+      case 0:
+        _openScreen(0);
+        break;
+      case 1:
+        _openScreen(1);
+        break;
+      case 2:
+        _openScreen(3);
+        break;
+      case 3:
+        _openScreen(4);
+        break;
+      case 4:
+        _showMoreMenu();
+        break;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
-        index: _selectedIndex,
+        index: _screenIndex,
         children: _screens,
       ),
-
       bottomNavigationBar: NavigationBar(
-        selectedIndex: _selectedIndex,
-        onDestinationSelected: (index) {
-          if (index == 4) {
-            showModalBottomSheet<void>(
-              context: context,
-              showDragHandle: true,
-              builder: (sheetContext) {
-                return SafeArea(
-                  child: ListView(
-                    shrinkWrap: true,
-                    children: [
-                      ListTile(
-                        leading: const Icon(Icons.pie_chart_outline),
-                        title: const Text('Budgets'),
-                        onTap: () {
-                          Navigator.pop(sheetContext);
-                          setState(() => _selectedIndex = 2);
-                        },
-                      ),
-                      ListTile(
-                        leading: const Icon(Icons.bar_chart),
-                        title: const Text('Reports'),
-                        onTap: () {
-                          Navigator.pop(sheetContext);
-                          setState(() => _selectedIndex = 5);
-                        },
-                      ),
-                      ListTile(
-                        leading: const Icon(Icons.receipt_long),
-                        title: const Text('Bills'),
-                        onTap: () {
-                          Navigator.pop(sheetContext);
-                          setState(() => _selectedIndex = 6);
-                        },
-                      ),
-                      ListTile(
-                        leading: const Icon(Icons.person_outline),
-                        title: const Text('Profile'),
-                        onTap: () {
-                          Navigator.pop(sheetContext);
-                          setState(() => _selectedIndex = 7);
-                        },
-                      ),
-                    ],
-                  ),
-                );
-              },
-            );
-            return;
-          }
-
-          const destinationIndexes = [0, 1, 3, 4];
-          setState(() {
-            _selectedIndex = destinationIndexes[index];
-          });
-        },
+        selectedIndex: _navIndex,
+        onDestinationSelected: _onDestinationSelected,
         labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
         destinations: const [
           NavigationDestination(
@@ -127,7 +162,6 @@ class _MainNavigationState extends State<MainNavigation> {
           ),
         ],
       ),
-
     );
   }
 }

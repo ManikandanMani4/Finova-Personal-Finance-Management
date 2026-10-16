@@ -18,8 +18,10 @@ class NotificationService {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
-  /// Reads pending Android notifications and saves valid transactions.
-  /// Returns the number of new transaction records saved.
+  /// Reads locally queued Android notifications and saves eligible
+  /// transactions to the signed-in user's Firestore collection.
+  ///
+  /// Returns the number of newly saved transactions.
   Future<int> syncPendingTransactions() async {
     final user = _auth.currentUser;
 
@@ -33,6 +35,7 @@ class NotificationService {
     if (response == null || response.isEmpty) return 0;
 
     final decoded = jsonDecode(response);
+
     if (decoded is! List) return 0;
 
     final pending = decoded.whereType<Map>().toList();
@@ -60,10 +63,12 @@ class NotificationService {
       final amount = _extractAmount(text);
       final type = _extractType(text);
 
-      // Do not create a financial record when the details are ambiguous.
-      if (amount == null || amount <= 0 || type == null) continue;
+      // Avoid automatically saving notifications with unclear details.
+      if (amount == null || amount <= 0 || type == null) {
+        continue;
+      }
 
-      // Stable document ID makes repeated syncs idempotent.
+      // Stable ID prevents duplicate records during repeated syncs.
       final documentId = base64Url
           .encode(utf8.encode(notificationId))
           .replaceAll('=', '');
@@ -75,11 +80,13 @@ class NotificationService {
           : DateTime.now();
 
       final transaction = <String, dynamic>{
-        'title': title.isNotEmpty ? title : 'Notification transaction',
+        'title': title.isNotEmpty ? title : 'Bank notification',
         'amount': amount,
         'type': type,
         'category': 'Other',
         'date': Timestamp.fromDate(date),
+        'paymentMethod': 'Bank notification',
+        'note': 'Imported from a notification; please verify.',
         'createdAt': FieldValue.serverTimestamp(),
         'source': 'notification',
         'sourcePackage': packageName,
@@ -87,6 +94,7 @@ class NotificationService {
         'verificationStatus': 'needs_review',
       };
 
+      // Use a transaction to avoid overwriting an existing record.
       final result = await _firestore.runTransaction<int>((tx) async {
         final existing = await tx.get(reference);
 
@@ -99,8 +107,8 @@ class NotificationService {
       savedCount += result;
     }
 
-    // Do not clear the Android queue here. Some records may need review,
-    // and a partial upload must not cause pending data to be lost.
+    // Keep the Android queue until successful syncing and explicit cleanup
+    // are implemented. This avoids losing records during partial failures.
     return savedCount;
   }
 
@@ -128,7 +136,7 @@ class NotificationService {
       r'\b(debited|debit|sent|paid|payment|withdrawn)\b',
     ).hasMatch(lower);
 
-    // Ambiguous messages should not be classified automatically.
+    // If both or neither match, don't guess the transaction type.
     if (income == expense) return null;
 
     return income ? 'income' : 'expense';
